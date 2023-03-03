@@ -7,7 +7,7 @@
 
 `1° Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto que está sendo desenvolvido é um site voltado à orientação de metas e objetivos relacionados a musculação. Neste site, utilizaremos de informações relacionadas a ganho de massa muscular, perda de peso ou apenas por questões de saúde.  
 
 ## Integrantes
 
