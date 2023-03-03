@@ -16,6 +16,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Matheus Filipe Duarte Rodrigues
 * Natã Torres Dias
 * Renzzo Silva Rocha
+* Rodrigo Mota Proton Campos
 
 
 ## Orientador
