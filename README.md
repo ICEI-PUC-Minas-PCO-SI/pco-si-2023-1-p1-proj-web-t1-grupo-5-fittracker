@@ -1,5 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10354589&assignment_repo_type=AssignmentRepo)
-# TÍTULO DO PROJETO
+# FIT TRACKER
 
 `Sistemas De Informação`
 
@@ -12,10 +12,11 @@ O projeto que está sendo desenvolvido é um site voltado à orientação de met
 ## Integrantes
 
 * Gabriel Augusto Silva Bertuane
+* Gustavo Evaristo da Silva
+* João Paulo Cardoso dos Santos
 * Matheus Campos do Amaral
 * Matheus Filipe Duarte Rodrigues
 * Natã Torres Dias
-* Renzzo Silva Rocha
 * Rodrigo Mota Proton Campos
 
 
