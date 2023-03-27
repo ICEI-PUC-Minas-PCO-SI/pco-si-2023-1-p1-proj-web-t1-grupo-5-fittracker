@@ -12,7 +12,6 @@ O projeto que está sendo desenvolvido é um site voltado à orientação de met
 ## Integrantes
 
 * Gabriel Augusto Silva Bertuane
-* Gustavo Evaristo da Silva
 * João Paulo Cardoso dos Santos
 * Matheus Campos do Amaral
 * Matheus Filipe Duarte Rodrigues
