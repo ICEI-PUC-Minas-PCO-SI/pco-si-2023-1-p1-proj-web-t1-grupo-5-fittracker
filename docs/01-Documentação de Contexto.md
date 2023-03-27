@@ -1,9 +1,9 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O projeto abordado consiste na criação de um sistema de rastreamento fitness que visa auxiliar usuários em suas atividades físicas na academia. O sistema terá recursos para monitorar o desempenho dos usuários e fornecer dicas, vídeos e artigos para mantê-los motivados em suas atividades físicas.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Muitas pessoas frequentam academias para atingir metas específicas, mas sem o acompanhamento adequado pode ser difícil alcançar esses objetivos de forma efetiva e consistente. O problema que o sistema pretende resolver é justamente este, fornecendo aos usuários uma ferramenta que os auxilie a monitorar seu desempenho e progresso de forma fácil e intuitiva.
 
 Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 
