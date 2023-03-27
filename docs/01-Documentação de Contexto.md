@@ -16,18 +16,19 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral do projeto é desenvolver um sistema que permita aos usuários acompanharem seu desempenho físico, receberem orientações e incentivos para manterem-se motivados em suas atividades físicas, e assim alcançarem seus objetivos de forma mais efetiva e consistente. Alguns objetivos específicos incluem:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Desenvolver uma interface amigável e intuitiva para os usuários;
+Implementar recursos de monitoramento de desempenho e progresso dos usuários;
+Oferecer conteúdo motivacional para manter os usuários engajados em suas atividades físicas.
+
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Com o aumento da conscientização sobre a importância da atividade física para a saúde e bem-estar, existe uma demanda crescente por ferramentas que auxiliem as pessoas nessa jornada. O sistema proposto oferece uma solução conveniente e acessível para que as pessoas possam monitorar seu desempenho e receberem orientações e incentivos para manterem-se motivados em suas atividades físicas.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
