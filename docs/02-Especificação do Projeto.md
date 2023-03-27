@@ -2,13 +2,13 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Nesta seção, foram abordados diferentes tópicos, incluindo persona, histórias de usuários, requisitos funcionais e não funcionais, restrições e outras considerações importantes.
+As personas são perfis fictícios que representam diferentes tipos de usuários que podem usar o sistema. Essas personas incluem informações como idade, gênero, nível de atividade física, interesses e objetivos de fitness, entre outras informações relevantes. As histórias de usuários ajudam a entender as necessidades e expectativas dos diferentes usuários que utilizarão o sistema. Os requisitos funcionais e não funcionais definem as funcionalidades e recursos que o sistema deve ter. As restrições são fatores limitantes que podem influenciar o escopo e a viabilidade do projeto. Essas restrições precisam ser cuidadosamente avaliadas e gerenciadas para garantir que o projeto possa ser concluído com sucesso e dentro dos parâmetros estabelecidos.
+Todos esses tópicos são importantes para garantir que o sistema atenda às necessidades dos usuários, tenha um desempenho satisfatório e seja concluído dentro das condições estabelecidas.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+A persona criada para este projeto é Ana, uma analista de sistemas de 30 anos que quer perder peso e melhorar sua saúde geral. Ela tem um estilo de vida sedentário e tem dificuldade em encontrar tempo para se exercitar. Ana precisa de um sistema que possa ajudá-la a definir metas realistas e alcançáveis, monitorar sua atividade física e se motivar para manter-se no caminho certo.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
