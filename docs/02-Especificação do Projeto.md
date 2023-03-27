@@ -29,14 +29,14 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Definir objetivos realista de exercicios e acompanhar meu progresso ao longo do tempo | Me manter motivado a alcançar meus objetivos de saúde |
-|Usuário do sistema  | Acessar uma ampla variedade de treinos e atividades físicas         | Experimentar novas formas de exercitar       |
-|Usuário do sistema  | Ter acesso a recursos de orientação e instruções sobre como realizar corretamente cada exercicio | Evitar lesões e melhorar a técnica           |
-|Usuário do sistema  | Registrar minha dieta                                               | Ajustar minha alimentação para atingir meus objetivos |
-|Treinador           | Criar e personalizar planos de treino para cada usuário             | Que eles possam alcançar os objetivos com segurança e eficiência |
-|Treinador           | Monitorar o progresso dos usuários e ajustar seus treinos           | Que eles possam ter acompanhamento adequado e individualizado |
-|Treinador           | Oferecer orientação e suporte aos usuários, oferecendo conselhos de nutrição e técnicas | Que eles possam alcançar os objetivos com sucesso |
+|Usuário do sistema  | Acessar uma ampla variedade de treinos e atividades físicas | Experimentar novas formas de exercitar e evitar a monotonia |
+|Usuário do sistema  | Ter acesso a recursos de orientação e instruções sobre como realizar corretamente cada exercicio | Evitar lesões e melhorar a técnica |
+|Usuário do sistema  | Registrar minha dieta e ver como ela se relaciona com meu progresso | Ajustar minha alimentação para atingir meus objetivos |
+|Treinador           | Criar e personalizar planos de treino para cada usuário | Que possam alcançar os objetivos com segurança e eficiência |
+|Treinador           | Monitorar o progresso dos usuários e ajustar seus treinos de acordo com o seu desempenho | Que possam ter acompanhamento adequado e individualizado |
+|Treinador           | Oferecer orientação e suporte aos usuários, oferecendo conselhos de nutrição e técnicas | Que possam alcançar os objetivos com sucesso |
 |Treinador           | Acompanhar a participação dos usuários nos treinos e identificar aqueles que precisam de mais incentivo | Oferecer ajuda personalizada e mantê-los motivados |
-|Treinador           | Atualizar e adicionar novos planos de treinamento e exercícios     | Que os usuários tenham uma variedade de opções e escolher treinos que melhor se adaptam |
+|Treinador           | Atualizar e adicionar novos planos de treinamento e exercícios | Que os usuários tenham uma variedade de opções e escolher treinos que melhor se adaptem às suas necessidades |
 
 
 ## Requisitos
