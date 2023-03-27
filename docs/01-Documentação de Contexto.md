@@ -35,10 +35,8 @@ Com o aumento da conscientização sobre a importância da atividade física par
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo do projeto são pessoas que frequentam academias ou praticam atividades físicas em geral. O sistema será desenvolvido de forma a ser fácil e intuitivo de usar, atendendo às necessidades desse público. Dentre os diferentes perfis de usuários, destacam-se aqueles que buscam atingir metas específicas como perda de peso ou ganho de massa muscular, bem como aqueles que buscam manter-se saudáveis e em forma.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
