@@ -45,6 +45,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Requisitos funcionais:
+Registro de usuário: O sistema deve permitir que os usuários se cadastrem e criem um perfil, incluindo informações como nome, idade, peso, altura e objetivos de fitness.
+Criação de plano de treino: O sistema deve permitir que os treinadores criem planos de treino personalizados para cada usuário, com base em seus objetivos de fitness, histórico de exercícios e limitações físicas.
+Exibição de treinos e exercícios: O sistema deve exibir os treinos e exercícios, com informações sobre as técnicas corretas de exercícios, repetições e séries.
+Monitoramento de progresso: O sistema deve permitir que os usuários monitorem seu progresso ao longo do tempo, incluindo estatísticas como tempo gasto em exercícios e peso perdido.
+
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
@@ -52,6 +60,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 
 ### Requisitos não Funcionais
+
+Usabilidade: O sistema deve ser fácil de usar e intuitivo, com uma interface amigável que permita aos usuários acessar e interagir com o sistema facilmente.
+Performance: O sistema deve ser rápido e responsivo, com tempos de carregamento rápidos e sem atrasos ou falhas durante o uso.
+Disponibilidade: O sistema deve estar disponível 24 horas por dia, 7 dias por semana, para que os usuários possam acessá-lo a qualquer momento.
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
