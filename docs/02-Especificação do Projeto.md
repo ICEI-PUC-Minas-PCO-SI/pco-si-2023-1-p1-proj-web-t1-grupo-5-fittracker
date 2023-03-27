@@ -24,21 +24,20 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Usuário do sistema  | Definir objetivos realista de exercicios e acompanhar meu progresso ao longo do tempo | Me manter motivado a alcançar meus objetivos de saúde |
+|Usuário do sistema  | Acessar uma ampla variedade de treinos e atividades físicas         | Experimentar novas formas de exercitar       |
+|Usuário do sistema  | Ter acesso a recursos de orientação e instruções sobre como realizar corretamente cada exercicio | Evitar lesões e melhorar a técnica           |
+|Usuário do sistema  | Registrar minha dieta                                               | Ajustar minha alimentação para atingir meus objetivos |
+|Treinador           | Criar e personalizar planos de treino para cada usuário             | Que eles possam alcançar os objetivos com segurança e eficiência |
+|Treinador           | Monitorar o progresso dos usuários e ajustar seus treinos           | Que eles possam ter acompanhamento adequado e individualizado |
+|Treinador           | Oferecer orientação e suporte aos usuários, oferecendo conselhos de nutrição e técnicas | Que eles possam alcançar os objetivos com sucesso |
+|Treinador           | Acompanhar a participação dos usuários nos treinos e identificar aqueles que precisam de mais incentivo | Oferecer ajuda personalizada e mantê-los motivados |
+|Treinador           | Atualizar e adicionar novos planos de treinamento e exercícios     | Que os usuários tenham uma variedade de opções e escolher treinos que melhor se adaptam |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
