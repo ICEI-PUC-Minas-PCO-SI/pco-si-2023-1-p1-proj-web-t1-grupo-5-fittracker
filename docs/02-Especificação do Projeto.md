@@ -46,6 +46,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |RNF-002| O sistema deve estar disponível 24 horas por dia, 7 dias por semana, para que os usuários possam acessá-lo a qualquer momento |  MÉDIA |
 |RNF-003| O sistema deve ser rápido e responsivo, com tempos de carregamento rápidos e sem atrasos ou falhas durante o uso |  BAIXA | 
 
+![WhatsApp Image 2023-03-26 at 16 12 10](https://user-images.githubusercontent.com/96788718/228094972-75b4c0dc-adb3-4a2c-94c3-17d7a62b74f6.jpeg)
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
