@@ -1,18 +1,18 @@
 # Introdução
 
-O projeto abordado consiste na criação de um sistema de rastreamento fitness que visa auxiliar usuários em suas atividades físicas na academia. O sistema terá recursos para monitorar o desempenho dos usuários e fornecer dicas, vídeos e artigos para mantê-los motivados em suas atividades físicas.
+O FitTracker consiste em uma alternativa para auxiliar a melhora do desempenho físico e das escolhas alimentares. Visando, dessa forma, mitigar problemas, conhecimento e monitoramento nas atividades e exercícios físicos. 
 
 
 ## Problema
-Muitas pessoas frequentam academias para atingir metas específicas, mas sem o acompanhamento adequado pode ser difícil alcançar esses objetivos de forma efetiva e consistente. O problema que o sistema pretende resolver é justamente este, fornecendo aos usuários uma ferramenta que os auxilie a monitorar seu desempenho e progresso de forma fácil e intuitiva.
+A falta de acompanhamento no âmbito dos exercícios físicos pode fazer com que indivíduos que queiram adotar uma rotina saudável não consigam atingir seus objetivos, sofram lesões na academia ou até mesmo adotem rotinas inviável e extremistas, que poderiam ser evitadas com o mínimo de acompanhamento adequado. Além disso, muito treinadores encontram dificuldades para informar e aconcelhar seus alunos de forma eficiente, prática e intuitiva. 
 
 
 ## Objetivos
 
-O objetivo geral do projeto é desenvolver um sistema que permita aos usuários acompanharem seu desempenho físico, receberem orientações e incentivos para manterem-se motivados em suas atividades físicas, e assim alcançarem seus objetivos de forma mais efetiva e consistente. Alguns objetivos específicos incluem:
+O objetivo geral do projeto é permitir que os usuários acompanhem seu desempenho físico, recebam orientações e incentivos para manterem-se motivados em suas atividades físicas, e assim alcançarem seus objetivos de forma mais efetiva e consistente. Alguns objetivos específicos incluem:
 
-Desenvolver uma interface amigável e intuitiva para os usuários;
-Implementar recursos de monitoramento de desempenho e progresso dos usuários;
+Disponibilizar uma interface amigável e intuitiva para os usuários;
+Prover recursos de monitoramento de desempenho e progresso dos usuários;
 Oferecer conteúdo motivacional para manter os usuários engajados em suas atividades físicas.
 
 
