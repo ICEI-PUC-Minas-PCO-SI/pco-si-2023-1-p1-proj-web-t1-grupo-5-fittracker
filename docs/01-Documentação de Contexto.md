@@ -4,16 +4,12 @@ O FitTracker consiste em uma alternativa para auxiliar a melhora do desempenho f
 
 
 ## Problema
-A falta de acompanhamento no âmbito dos exercícios físicos pode fazer com que indivíduos que queiram adotar uma rotina saudável não consigam atingir seus objetivos, sofram lesões na academia ou até mesmo adotem rotinas inviável e extremistas, que poderiam ser evitadas com o mínimo de acompanhamento adequado. Além disso, muito treinadores encontram dificuldades para informar e aconcelhar seus alunos de forma eficiente, prática e intuitiva. 
+A falta de acompanhamento no âmbito dos exercícios físicos pode fazer com que indivíduos que queiram adotar uma rotina saudável não consigam atingir seus objetivos, sofram lesões na academia ou até mesmo adotem rotinas inviáveis e extremistas, que poderiam ser evitadas com o mínimo de acompanhamento adequado. Além disso, muito treinadores encontram dificuldades para informar e aconcelhar seus alunos de forma eficiente, prática e intuitiva. 
 
 
 ## Objetivos
 
-O objetivo geral do projeto é permitir que os usuários acompanhem seu desempenho físico, recebam orientações e incentivos para manterem-se motivados em suas atividades físicas, e assim alcançarem seus objetivos de forma mais efetiva e consistente. Alguns objetivos específicos incluem:
-
-Disponibilizar uma interface amigável e intuitiva para os usuários;
-Prover recursos de monitoramento de desempenho e progresso dos usuários;
-Oferecer conteúdo motivacional para manter os usuários engajados em suas atividades físicas.
+O objetivo geral do projeto é permitir que os usuários acompanhem seu desempenho físico, recebam orientações e incentivos para manterem-se motivados em suas atividades físicas, e assim alcançarem seus objetivos de forma mais efetiva e consistente. Ademais, a interface irá auxiliar a rotina de treinadores, provendo um ambiente de contato com seus alunos.
 
 
 ## Justificativa
