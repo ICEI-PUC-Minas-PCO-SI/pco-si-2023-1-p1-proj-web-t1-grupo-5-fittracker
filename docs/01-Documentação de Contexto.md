@@ -1,6 +1,6 @@
 # Introdução
 
-O FitTracker consiste em uma alternativa para auxiliar a melhora do desempenho físico e das escolhas alimentares. Visando, dessa forma, mitigar problemas, conhecimento e monitoramento nas atividades e exercícios físicos. 
+O FitTracker consiste em uma aplicação para promover um ambiente de compartilhamento de informações e instruções entre educador físico e aluno, possibilitando trocas de dicas, feedbacks e concelhos. 
 
 
 ## Problema
