@@ -1,6 +1,6 @@
 # Introdução
 
-O FitTracker consiste em uma aplicação para promover um ambiente de compartilhamento de informações e instruções entre educador físico e aluno, possibilitando trocas de dicas, feedbacks e concelhos. 
+O FitTracker consiste em uma aplicação para promover um ambiente de compartilhamento de informações e instruções entre educador físico e aluno, possibilitando trocas de dicas, feedbacks e conselhos. 
 
 
 ## Problema
@@ -19,5 +19,5 @@ Com o aumento da conscientização sobre a importância da atividade física par
 
 ## Público-Alvo
 
-O público-alvo do projeto são pessoas que frequentam academias ou praticam atividades físicas em geral. O sistema será desenvolvido de forma a ser fácil e intuitivo de usar, atendendo às necessidades desse público. Dentre os diferentes perfis de usuários, destacam-se aqueles que buscam atingir metas específicas como perda de peso ou ganho de massa muscular, bem como aqueles que buscam manter-se saudáveis e em forma.
+O público-alvo são pessoas que frequentam academias ou praticam atividades físicas em geral. Dentre os diferentes perfis de usuários, destacam-se aqueles que buscam atingir metas específicas como ganho de peso, emagrecimento ou melhora da saúde. Além disso, treinadores que buscam alternativas para manter o contato com seus alunos. 
 
