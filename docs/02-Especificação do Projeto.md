@@ -37,6 +37,9 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |RF-002| Permitir que os treinadores criem planos de treino personalizados para cada usuário, com base em seus objetivos, histórico de exercícios e limitações físicas | ALTA |
 |RF-003| Exibir os treinos e exercícios, com informações sobre as técnicas corretas de exercícios, repetições e séries | MÉDIA | 
 |RF-004| Permitir que os usuários monitorem seu progresso ao longo do tempo, incluindo estatísticas como tempo gasto em exercícios e peso perdido | MÉDIA | 
+|RF-005| Permitir a edição de informações do usuário, como peso, dieta| MÉDIA | 
+|RF-006| Permitir que treinadores disponibilizem dicas e conteúdos motivacionais aleatórios. | MÉDIA | 
+
 
 ### Requisitos não Funcionais
 
@@ -46,8 +49,6 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |RNF-002| O sistema deve estar disponível 24 horas por dia, 7 dias por semana, para que os usuários possam acessá-lo a qualquer momento |  MÉDIA |
 |RNF-003| O sistema deve ser rápido e responsivo, com tempos de carregamento rápidos e sem atrasos ou falhas durante o uso |  BAIXA | 
 |RF-004| Permitir que os usuários monitorem seu progresso ao longo do tempo, incluindo estatísticas como tempo gasto em exercícios e peso perdido | ALTA | 
-|RF-005| Permitir a edição de informações do usuário, como peso, dieta| MÉDIA | 
-|RF-006| Permitir que treinadores disponibilizem dicas e conteúdos motivacionais aleatórios. | MÉDIA | 
 
 ![WhatsApp Image 2023-03-26 at 16 12 10](https://user-images.githubusercontent.com/96788718/228094972-75b4c0dc-adb3-4a2c-94c3-17d7a62b74f6.jpeg)
 ## Restrições
