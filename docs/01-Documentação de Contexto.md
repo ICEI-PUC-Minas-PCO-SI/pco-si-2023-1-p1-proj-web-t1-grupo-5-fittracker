@@ -14,10 +14,10 @@ O objetivo geral do projeto é permitir que os usuários acompanhem seu desempen
 
 ## Justificativa
 
-Com o aumento da conscientização sobre a importância da atividade física para a saúde e bem-estar, existe uma demanda crescente por ferramentas que auxiliem as pessoas nessa jornada. O sistema proposto oferece uma solução conveniente e acessível para que as pessoas possam monitorar seu desempenho e receberem orientações e incentivos para manterem-se motivados em suas atividades físicas.
+Com o aumento da conscientização sobre a importância de exercícios físicos para a saúde e bem-estar, há uma demanda crescente por ferramentas que auxiliem nessa jornada. O sistema proposto oferece uma solução acessível para que indivíduos possam monitorar seu desempenho e recebam orientações e incentivos para manterem-se motivados em suas rotinas saudáveis.
 
 
 ## Público-Alvo
 
-O público-alvo são pessoas que frequentam academias ou praticam atividades físicas em geral. Dentre os diferentes perfis de usuários, destacam-se aqueles que buscam atingir metas específicas como ganho de peso, emagrecimento ou melhora da saúde. Além disso, treinadores que buscam alternativas para manter o contato com seus alunos. 
+O público-alvo são pessoas que frequentam academias ou praticam atividades físicas em geral. Dentre os diferentes perfis de usuários, destacam-se aqueles que buscam atingir metas específicas como ganho de peso, emagrecimento ou melhora da saúde. Além disso, treinadores que buscam alternativas para disponibilizar informações para seus alunos. 
 
