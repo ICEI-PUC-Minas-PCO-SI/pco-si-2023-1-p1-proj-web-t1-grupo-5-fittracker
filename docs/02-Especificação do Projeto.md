@@ -9,6 +9,7 @@ Todos esses tópicos são importantes para garantir que o sistema atenda às nec
 ## Personas
 Persona 1:
 Ana, uma analista de sistemas de 30 anos que quer perder peso e melhorar sua saúde geral. Ela tem um estilo de vida sedentário e tem dificuldade em encontrar tempo para se exercitar. Ana precisa de um sistema que possa ajudá-la a definir metas realistas e alcançáveis, monitorar sua atividade física e se motivar para manter-se no caminho certo.
+
 Persona 2: 
 Luís, 45 anos, motorista de caminhão, deseja um aplicativo que o ajude a planejar refeições saudáveis e sugestões de exercícios para fazer durante suas viagens de trabalho.
 
