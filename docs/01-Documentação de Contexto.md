@@ -1,10 +1,10 @@
 # Introdução
 
-O FitTracker consiste em uma aplicação para promover um ambiente de compartilhamento de informações e instruções entre educador físico e aluno, possibilitando trocas de dicas, feedbacks e conselhos. 
+O FitTracker consiste em uma aplicação projetada para ajudar as pessoas a atingir seus objetivos fitness de forma eficiente e eficaz, fornecendo recursos e ferramentas para acompanhar o progresso, personalizar planos de treinamento, monitorar a nutrição e para promover um ambiente de compartilhamento de informações e instruções entre educador físico e aluno, possibilitando trocas de dicas, feedbacks e conselhos. 
 
 
 ## Problema
-A falta de acompanhamento no âmbito dos exercícios físicos pode fazer com que indivíduos que queiram adotar uma rotina saudável não consigam atingir seus objetivos, sofram lesões na academia ou até mesmo adotem rotinas inviáveis e extremistas, que poderiam ser evitadas com o mínimo de acompanhamento adequado. Além disso, muito treinadores encontram dificuldades para informar e aconcelhar seus alunos de forma eficiente, prática e intuitiva. 
+A falta de acompanhamento no âmbito dos exercícios físicos pode fazer com que indivíduos que queiram adotar uma rotina saudável não consigam atingir seus objetivos, sofram lesões na academia ou até mesmo adotem rotinas inviáveis e extremistas, que poderiam ser evitadas com o mínimo de acompanhamento adequado. Além disso, muito treinadores encontram dificuldades para informar e aconselhar seus alunos de forma eficiente, prática e intuitiva. 
 
 
 ## Objetivos
@@ -14,7 +14,7 @@ O objetivo geral do projeto é permitir que os usuários acompanhem seu desempen
 
 ## Justificativa
 
-Com o aumento da conscientização sobre a importância de exercícios físicos para a saúde e bem-estar, há uma demanda crescente por ferramentas que auxiliem nessa jornada. O sistema proposto oferece uma solução acessível para que indivíduos possam monitorar seu desempenho e recebam orientações e incentivos para manterem-se motivados em suas rotinas saudáveis.
+A importância de estar em forma e da saúde física é amplamente reconhecida e tem sido associada a uma variedade de benefícios, incluindo uma redução no risco de doenças crônicas, melhor qualidade de vida e aumento da longevidade. No entanto, muitas pessoas lutam para incorporar o exercício em suas rotinas diárias, especialmente quando têm pouca orientação ou suporte. Um sistema de acompanhamento fitness pode fornecer uma solução eficaz para esses desafios, ajudando as pessoas a atingir seus objetivos de forma mais conveniente e motivadora.
 
 
 ## Público-Alvo
