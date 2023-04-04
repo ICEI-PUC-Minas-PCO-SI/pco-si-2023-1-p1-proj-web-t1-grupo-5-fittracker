@@ -23,10 +23,6 @@ O projeto que está sendo desenvolvido é um site voltado à orientação de met
 
 * Fabio Leandro Rodrigues Cordeiro
 
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
-
 # Documentação
 
 <ol>
