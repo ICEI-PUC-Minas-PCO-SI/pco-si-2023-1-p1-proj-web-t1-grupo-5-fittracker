@@ -43,14 +43,14 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
+|ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que os usuários se cadastrem e criem um perfil, incluindo informações como nome, idade, peso, altura e objetivos | ALTA | 
-|RF-002| Permitir que os treinadores criem planos de treino personalizados para cada usuário, com base em seus objetivos, histórico de exercícios e limitações físicas | ALTA |
-|RF-003| Exibir os treinos e exercícios, com informações sobre as técnicas corretas de exercícios, repetições e séries | MÉDIA | 
-|RF-004| Permitir que os usuários monitorem seu progresso ao longo do tempo, incluindo estatísticas como tempo gasto em exercícios e peso perdido | MÉDIA | 
-|RF-005| Permitir a edição de informações do usuário, como peso, dieta| MÉDIA | 
-|RF-006| Permitir que treinadores disponibilizem dicas e conteúdos motivacionais aleatórios. | MÉDIA | 
+|RF-001| Permitir que os usuários se cadastrem e criem um perfil, incluindo informações como nome, idade, peso, altura e objetivos | ALTA | Rodrigo Mota |
+|RF-002| Permitir que os treinadores criem planos de treino personalizados para cada usuário, com base em seus objetivos, histórico de exercícios e limitações físicas | ALTA | Natã Torres |
+|RF-003| Exibir os treinos e exercícios, com informações sobre as técnicas corretas de exercícios, repetições e séries | MÉDIA | Matheus Campos |
+|RF-004| Permitir que os usuários monitorem seu progresso ao longo do tempo, incluindo estatísticas como tempo gasto em exercícios e peso perdido | MÉDIA | João Paulo |
+|RF-005| Permitir a edição de informações do usuário, como peso, dieta| MÉDIA | Matheus Filipe |
+|RF-006| Permitir que treinadores disponibilizem dicas e conteúdos motivacionais aleatórios. | MÉDIA | Gabriel Augusto |
 
 
 ### Requisitos não Funcionais
