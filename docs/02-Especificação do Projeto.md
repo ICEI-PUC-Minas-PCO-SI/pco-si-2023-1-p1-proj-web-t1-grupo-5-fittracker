@@ -44,7 +44,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
-|------|-----------------------------------------|----|
+|------|-----------------------------------------|----|----|
 |RF-001| Permitir que os usuários se cadastrem e criem um perfil, incluindo informações como nome, idade, peso, altura e objetivos | ALTA | Rodrigo Mota |
 |RF-002| Permitir que os treinadores criem planos de treino personalizados para cada usuário, com base em seus objetivos, histórico de exercícios e limitações físicas | ALTA | Natã Torres |
 |RF-003| Exibir os treinos e exercícios, com informações sobre as técnicas corretas de exercícios, repetições e séries | MÉDIA | Matheus Campos |
