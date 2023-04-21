@@ -7,7 +7,7 @@
 
 `1° Semestre`
 
-O projeto que está sendo desenvolvido é um site voltado à orientação de metas e objetivos relacionados a musculação. Neste site, utilizaremos de informações relacionadas a ganho de massa muscular, perda de peso ou apenas por questões de saúde.  
+O FitTracker consiste em uma aplicação projetada para ajudar as pessoas a atingir seus objetivos fitness de forma eficiente e eficaz, fornecendo recursos e ferramentas para acompanhar o progresso, personalizar planos de treinamento, monitorar a nutrição e para promover um ambiente de compartilhamento de informações e instruções entre educador físico e aluno, possibilitando trocas de dicas, feedbacks e conselhos.
 
 ## Integrantes
 
