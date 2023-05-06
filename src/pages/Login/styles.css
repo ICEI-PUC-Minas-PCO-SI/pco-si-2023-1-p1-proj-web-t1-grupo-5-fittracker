@@ -1,12 +1,20 @@
 /* Importanto variaveis de cores do arquivo global */
 @import url(../../global/variables.css);
 
+#background{
+    background-image: url("../../assets/backgroundLogin.png");
+    background-repeat: no-repeat;
+    width:100%;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
 header{
     justify-content:space-between;
     display:flex;
     flex-wrap: wrap;
     flex-direction:row;
-    background-color:black;
     color:white;
     align-items:center;
     margin:0;
@@ -14,22 +22,8 @@ header{
 
 header img{
     width:20vw;
-    min-width: 150px;
-}
-.item_header{
-    max-width:33.33%;
-}
-
-#boas_vindas{
-    display:flex;
-    align-items:center;
-    
-}
-#duvidas_conta_logout{
-    display:flex;
-    flex-direction:column;
-    padding-right:30px;
-    gap:10px;
+    min-width: 200px;
+    padding: 20px;
 }
 
 footer{
@@ -40,7 +34,33 @@ footer{
     background:#F2F2F2;
 }
 main{
-    height:500px;
+    height:45vw;
+}
+#mainContent{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap:12rem;
+    padding-right:10px
+}
+#mainMessage{
+    padding-top:200px;
+    max-width:50%;   
+    padding-left:110px;
+}
+#div_login{
+    background:var(--light-gray);
+    width:25%;
+    height:32vw;
+    border-radius:47px;
+    min-width:240px;
+    min-height:310px;
+}
+h1{
+    color:white;
+    height:regular;
+    font-weight:300;
+    font-size:3rem;
 }
 footer a{
     display:block;
@@ -59,9 +79,13 @@ footer p{
     font-size:28px;
 }
 
+
 @media (max-width: 500px) {
-    .item_header {
-      min-width: 100%; 
+  
+    header img {
+        width: 50%; 
+        padding:0;
+        margin:0
     }
     header{
         padding:10px;
@@ -69,5 +93,32 @@ footer p{
 
     header h2{
         margin-bottom:8px;
+    }
+}
+@media (max-width: 1000px) {
+  
+    #mainMessage{
+        padding-top: 0;
+        max-width: 50%;
+        padding-left: 31px;
+    }
+    h1{
+        font-size:4vw;
+    }
+
+}
+@media (max-width: 873px) {
+    #mainContent{
+        gap:1rem;
+    }
+}
+@media (max-width:750px) {
+    footer{
+        margin-top:232px;
+    }
+}
+@media (max-width:522px) {
+    #mainContent{
+        justify-content:center;
     }
 }
