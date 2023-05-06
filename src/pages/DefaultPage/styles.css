@@ -1,5 +1,5 @@
 /* Importanto variaveis de cores do arquivo global */
-@import url(../../global/variables.css);
+@import url(../../styles/variables.css);
 
 header{
     justify-content:space-between;
@@ -65,5 +65,9 @@ footer p{
     }
     header{
         padding:10px;
+    }
+
+    header h2{
+        margin-bottom:8px;
     }
 }

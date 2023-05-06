@@ -8,27 +8,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
     <title>Fit Tracker</title>
-
     <!-- Link Css -->
-    <link rel="stylesheet" href="./DefaultLayout.css">
+    <link rel="stylesheet" href="./styles.css">
     <!-- Link Css Global -->
-    <link rel="stylesheet" href="./global/global.css">
+    <link rel="stylesheet" href="../../styles/global.css">
 </head>
 
 <body>
+    
     <header>
-        <div>
-            <img src="./assets/logo.svg" alt="Logo">
+        <div class="item_header">
+            <img src="../../assets/logo.svg" alt="Logo">
         </div>
-        <div id="boas_vindas">
+        <div class="item_header" id="boas_vindas">
             <h2>
                 Seja bem vindo, usuário!
             </h2>
         </div>
-        <div id="duvidas_conta_logout">
-            <p>Conta</p>
-            <p>Ajuda</p>
-            <p>Sair</p>
+        <div class="item_header" id="duvidas_conta_logout">
+            <a>Home</a>
+            <a href="../login/index.html"> Sair</a>
         </div>
     </header>
     <main>
@@ -36,27 +35,28 @@
     </main>
     <footer>
         <div class="information_footer">
-            <b>Sobre nós</b>
+            <p><b>Sobre nós</b></p>
             <a>Quem somos?</a>
             <a>Nossos obejetivos</a>
             <a>Resultados alcançados</a>
         </div>
         <div class="information_footer">
-            <b>Contatos</b>
+            <p><b>Contatos</b></p>
             <a>fittracker@gmail.com</a>
             <a>(31)99145-6032</a>
         </div>
         <div id="div_redes_sociais"> 
             <p><b>Nossas redes sociais</b></p>
-            <a><i class="bi bi-facebook"></i>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>
             </a>
-            <a><i class="bi bi-twitter"></i>
+            <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i>
             </a>
-            <a><i class="bi bi-instagram"></i>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i>
             </a>
         </div>
 
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
