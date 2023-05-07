@@ -1,5 +1,5 @@
 /* Importanto variaveis de cores do arquivo global */
-@import url(../../global/variables.css);
+@import url(../../styles/variables.css);
 
 #background{
     background-image: url("../../assets/backgroundLogin.png");
@@ -49,13 +49,52 @@ main{
     padding-left:110px;
 }
 #div_login{
+    display:flex;
+    flex-direction:column;
     background:var(--light-gray);
-    width:25%;
-    height:32vw;
+    width:23%;
+    height:26vw;
     border-radius:47px;
     min-width:240px;
     min-height:310px;
+    padding:20px 45px 10px;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
 }
+
+#div_login h1{
+    color:var(--yellow800);
+}
+#div_login input{
+    border:0;
+    display:block;
+    width:100%;
+    padding: 6px 15px;
+    font-size:1rem;
+    border-radius:5px;
+}
+#div_login button{
+    border:0;   
+    width:60%;
+    padding: 6px 15px;
+    font-size:1rem;
+    border-radius:5px;
+    background:var(--yellow800);
+    color:#ffff;
+    transition-duration: 0.15s;
+}
+#div_login button:hover {
+    background-color: #d3be27; /* Green */
+    color: white;
+}
+
+#div_login h1{
+    padding-bottom:20px;
+    font-weight: 700;
+}
+
+
 h1{
     color:white;
     height:regular;
@@ -95,6 +134,11 @@ footer p{
         margin-bottom:8px;
     }
 }
+
+@media (max-width:1330px) {
+    #div_login p{
+        font-size:0.8rem;    }
+}
 @media (max-width: 1000px) {
   
     #mainMessage{
@@ -102,7 +146,7 @@ footer p{
         max-width: 50%;
         padding-left: 31px;
     }
-    h1{
+    #mainMessage h1{
         font-size:4vw;
     }
 
@@ -122,3 +166,4 @@ footer p{
         justify-content:center;
     }
 }
+

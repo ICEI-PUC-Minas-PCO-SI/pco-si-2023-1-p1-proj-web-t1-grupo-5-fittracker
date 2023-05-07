@@ -11,10 +11,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-a {
+a,button {
     text-decoration: none;
     cursor:pointer;
 }
+
+
 
 ul {
     list-style: none;
