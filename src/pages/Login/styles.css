@@ -73,6 +73,11 @@ main{
     padding: 6px 15px;
     font-size:1rem;
     border-radius:5px;
+    outline: none;
+
+}
+#div_login input:focus {
+    border: 3px solid var(--yellow900);
 }
 #div_login button{
     border:0;   
@@ -83,9 +88,11 @@ main{
     background:var(--yellow800);
     color:#ffff;
     transition-duration: 0.15s;
+    box-shadow:0px 2px 6px var(--yellow900);
+
 }
 #div_login button:hover {
-    background-color: #d3be27; /* Green */
+    background-color: var(--yellow900);
     color: white;
 }
 
