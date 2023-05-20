@@ -21,35 +21,35 @@
     <!-- Link Css -->
     <link rel="stylesheet" href="../../DefaultLayout.css" />
     <!-- Link Css Global -->
-    <link rel="stylesheet" href="../../global/global.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
   </head>
   <header>
-    <div>
-      <img src="../../Assets/logo.svg" alt="Logo" />
+    <div class="item_header">
+        <img src="../../assets/logo.svg" alt="Logo">
     </div>
-    <div id="boas_vindas">
-      <h2>Seja bem vindo, treinador Pablo Victor</h2>
+    <div class="item_header" id="boas_vindas">
+        <h2>
+            Seja bem vindo, usuário!
+        </h2>
     </div>
-    <div id="duvidas_conta_logout">
-      <p>Conta</p>
-      <p>Ajuda</p>
-      <p>Sair</p>
+    <div class="item_header" id="duvidas_conta_logout">
+        <a href="../login/index.html"> Sair</a>
     </div>
-  </header>
+</header>
   <body>
     <main class="row" style="background-color: #ffffff">
       <div
-        style="background-color: #f2f2f2; height: 98%; padding-left: 43px"
+        style="background-color: #f2f2f2; padding-left: 43px"
         class="col-lg-3"
       >
         <h3><b>Alunos</b></h3>
-        <h4 class="text-bold">Lucas Oliveira</h4>
-        <h4 class="text-bold">Marcos Cardoso</h4>
-        <h4 class="text-bold">Juliette Dorneles</h4>
-        <h4 class="text-bold">Carlos Almeida</h4>
-        <h4 class="text-bold">Matheus Borges</h4>
+       <a href=""> <h4 class="text-bold">Lucas Oliveira</h4></a>
+       <a href=""> <h4 class="text-bold">Marcos Cardoso</h4></a>
+       <a href=""> <h4 class="text-bold">Juliette Dorneles</h4></a>
+       <a href=""> <h4 class="text-bold">Carlos Almeida</h4></a>
+       <a href=""> <h4 class="text-bold">Matheus Borges</h4></a>
       </div>
-      <div style="background-color: #dddddd; height: 98%" class="col-lg-9">
+      <div style="background-color: #dddddd; padding-top: 4%;" class="col-lg-9">
         <h3 style="text-align: center">
           <b>Retorno de informações da semana</b>
         </h3>
@@ -58,13 +58,14 @@
             <h4 class="text-bold" style="color: #039d3a"><b>Aluno</b></h4>
             <h5 class="text-bold"><u>Carlos Almeida</u></h5>
             <h5 class="text-bold"><u>Matheus Borges</u></h5>
+            <h5 class="text-bold"><u>Matheus Borges</u></h5>
           </div>
           <div class="col-lg-4">
             <h4 class="text-bold" style="color: #039d3a">
               <b>Tipo Informação</b>
             </h4>
-            <h5 class="text-bold"><u>Dúvida Alimentação/Chocolate</u></h5>
-            <h5 class="text-bold"><u>Feedback Semanal</u></h5>
+            <a href="../Retorno_Dúvidas/index.html"><h5 class="text-bold"><u>Dúvida Alimentação/Chocolate</u></h5></a>
+            <a href="../retorno_feedback/index.html"><h5 class="text-bold"><u>Feedback Semanal</u></h5></a>
           </div>
           <div class="col-lg-4">
             <h4 class="text-bold" style="color: #039d3a"><b>Status</b></h4>
@@ -74,28 +75,31 @@
             <h5 class="text-bold" style="color: #d9aa0088">
               <u>Pendente</u>
             </h5>
+            <h5 class="text-bold" style="color: #d9aa0088">
+              <u>Pendente</u>
+            </h5>
           </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="information_footer">
+        <b>Sobre nós</b>
+        <a>Quem somos?</a>
+        <a>Nossos obejetivos</a>
+        <a>Resultados alcançados</a>
+      </div>
+      <div class="information_footer">
+        <b>Contatos</b>
+        <a>fittracker@gmail.com</a>
+        <a>(31)99145-6032</a>
+      </div>
+      <div id="div_redes_sociais">
+        <p><b>Nossas redes sociais</b></p>
+        <a><i class="bi bi-facebook"></i> </a>
+        <a><i class="bi bi-twitter"></i> </a>
+        <a><i class="bi bi-instagram"></i> </a>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="information_footer">
-      <b>Sobre nós</b>
-      <a>Quem somos?</a>
-      <a>Nossos obejetivos</a>
-      <a>Resultados alcançados</a>
-    </div>
-    <div class="information_footer">
-      <b>Contatos</b>
-      <a>fittracker@gmail.com</a>
-      <a>(31)99145-6032</a>
-    </div>
-    <div id="div_redes_sociais">
-      <p><b>Nossas redes sociais</b></p>
-      <a><i class="bi bi-facebook"></i> </a>
-      <a><i class="bi bi-twitter"></i> </a>
-      <a><i class="bi bi-instagram"></i> </a>
-    </div>
-  </footer>
 </html>
