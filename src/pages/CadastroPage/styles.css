@@ -53,10 +53,10 @@ main{
     flex-direction:column;
     background:var(--light-gray);
     width:23%;
-    height:26vw;
+    height:410px;
     border-radius:47px;
     min-width:240px;
-    min-height:310px;
+    min-height:400;
     padding:20px 45px 10px;
     align-items:center;
     justify-content:center;
