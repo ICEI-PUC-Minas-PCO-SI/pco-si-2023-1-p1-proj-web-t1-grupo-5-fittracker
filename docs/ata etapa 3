@@ -1,0 +1,20 @@
+João Paulo:
+  Fez a tela de login, mantendo a responsividade. Além disso, fez o layout padão para ser utilizado nas diversas telas do sistema.
+  Também realizou os links entre as páginas e realizou ajustes necessários nas telas no geral. Responsável pela criação de tela de cadastro.
+  Tela login: tela para o usuário entrar na plataforma e acompanhar os seus dados
+  Tela de cadastro: tela para o cadastro de alunos ou trienadores
+  Layout padrão: Layout para ser utilizado na maioria das telas dos sistema.
+Matheus Duarte:
+  Utilizou as linguagens HTML e CSS para a realização das telas 3, 4 e 5.
+  As telas são respectivamente treino_dieta, treino_dieta_ professor e feedback_semanal.
+  As funções das telas são:
+  treino_dieta: O aluno tem os campos de treino e dieta que são disponibilizados pelo professor.
+  Opções para ser redirecionados para as outras telas, de envio de feedback, dúvidas e entre outros.
+  treino_dieta_professor: O professor consegue atualizar a ficha de treinos do aluno e os detalhes da dieta.
+  feedback_semanal: O aluno tem o campo direcionado a enviar o feedback da semana seguindo os protocolos de treino e dieta disponibilizados pelo professor, na tela citada anteriormente.
+Rodrigo Mota:
+  Fez tela 2 (tela do usuario treinador) principal e tambem criou a tela 8 (tela onde retorna o feedback do aluno para o treinador,
+  e corrigiu alguns problemas de responsividade nas telas do sistema.
+Matheus Amaral:
+  Utilizando de seus conhecimentos de Html e Css para fazer as telas tela de Dúvidas_Aluno que é onde o aluno irá enviar suas
+  dúvidas para o professor e Retorno_Dúvidas que é onde o professor irá ter acesso as dúvidas dos alunos e poderá respondê-las.
