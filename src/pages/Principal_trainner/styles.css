@@ -1,25 +1,17 @@
 /* Importanto variaveis de cores do arquivo global */
-@import url(../../styles/variables.css);
+@import url(../../global/variables.css);
 
 header{
     justify-content:space-between;
     display:flex;
-    flex-wrap: wrap;
     flex-direction:row;
     background-color:black;
     color:white;
     align-items:center;
-    margin:0;
 }
-
-header img{
+img{
     width:20vw;
-    min-width: 150px;
 }
-.item_header{
-    max-width:33.33%;
-}
-
 #boas_vindas{
     display:flex;
     align-items:center;
@@ -34,7 +26,6 @@ header img{
 
 footer{
     display:flex;
-    flex-wrap: wrap;
     padding: 20px 100PX;
     justify-content:space-between;
     background:#F2F2F2;
@@ -45,9 +36,6 @@ main{
 footer a{
     display:block;
 }
-footer p{
-    margin-top:20px;
-}
 .information_footer{
     display:inline-block;
 }
@@ -57,17 +45,4 @@ footer p{
 
 #div_redes_sociais i{
     font-size:28px;
-}
-
-@media (max-width: 500px) {
-    .item_header {
-      min-width: 100%; 
-    }
-    header{
-        padding:10px;
-    }
-
-    header h2{
-        margin-bottom:8px;
-    }
 }

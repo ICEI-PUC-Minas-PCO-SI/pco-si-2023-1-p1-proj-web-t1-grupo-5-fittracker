@@ -8,6 +8,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
+      integrity="sha512-UV8CvH68LnjVwIa6+kTx7AUIJq3MqDD0Uj9DntY7AT8Rv6ug0nJ4arzInh4SLPmpRz+e4TdnJfZlAbFQHYRKyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"
+      integrity="sha512-Bt/fx+zoKkmAgkP7gOxd9YF1cZaHzOjK4/o4yInGrbdzDDkKjxuc0zgdS0Zxt+fMzQKf45qOnRFabKShwLdcDg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <title>Fit Tracker</title>
     <!-- Link Css -->
@@ -29,7 +42,36 @@
         <a href="../login/index.html"> Sair</a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="inicio"><h3>Dúvidas:</h3></div>
+      <div class="box1">
+        <label for="assunto">Assunto: </label>
+        <input type="text" id="assunto" style="width: 73%; height: 22px" />
+      </div>
+      <div class="box2">
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="6"
+          style="width: 80%; height: 100px"
+        ></textarea>
+      </div>
+      <div class="button">
+        <button
+          type="button"
+          class="btn btn-lg rounded-pill"
+          style="
+            padding: 10px 30px;
+            background-color: rgb(50, 217, 50);
+            color: white;
+            border: 0;
+            border-radius: 210px;
+          "
+        >
+          Salvar
+        </button>
+      </div>
+    </main>
     <footer>
       <div class="information_footer">
         <p><b>Sobre nós</b></p>

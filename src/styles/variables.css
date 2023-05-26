@@ -3,8 +3,11 @@
     --primary_light: rgba(113,89,193,0.7);
     --secondary: rgba(155,73,193,1);
     --secondary_light: rgba(155,73,193,0.7);
+    --light-gray:#D9D9D9;
     --white: #fff;
     --black: #1E1E1E;
-
+    --yellow500:#dfff00;
+    --yellow800:#FFBF03;
+    --yellow900:#e2ac1f;
     --success: #47B852;
 }
