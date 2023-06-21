@@ -10,11 +10,13 @@ header{
     align-items:center;
 }
 img{
-    width:20vw;
+    width:13vw;
+    padding-top: 20px;
+    padding-left: 5%;
 }
 #boas_vindas{
     display:flex;
-    align-items:center;
+    font-size: 12px;
     
 }
 #duvidas_conta_logout{
@@ -24,49 +26,55 @@ img{
     gap:10px;
 }
 
-footer{
-    display:flex;
-    padding: 20px 100PX;
-    justify-content:space-between;
-    background:#F2F2F2;
-}
-main{
-    height:500px;
-}
-footer a{
-    display:block;
-}
-.information_footer{
-    display:inline-block;
-}
-#div_redes_sociais a{
-    display:inline;
-}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    margin-top: 220px;
+    justify-content: space-around;
+    background: #f2f2f2;
+  }
+  main {
+    height: 500px;
+  }
+  footer a {
+    display: block;
+  }
+  footer p {
+    margin-top: 20px;
+  }
+  .information_footer {
+    display: inline-block;
+  }
+  #div_redes_sociais a {
+    display: inline;
+  }
+  
+  #div_redes_sociais i {
+    font-size: 28px;
+  }
 
-#div_redes_sociais i{
-    font-size:28px;
-}
 .aluno{
     padding-top: 50px;
-    padding-left: 40%;
+    padding-left: 20%;
     padding-bottom: 20px;
 }
 .duvida1{
     display: flex;
-    padding-top: 50px;
-    padding-left: 200px;
-    padding-bottom: 40px;
+    padding-top: 110px;
+    padding-left: 140px;
+    padding-bottom: 20px;
 }
 .duvida2{
-    padding-left: 220px;
+    padding-left: 150px;
 }
 .box2{
     padding-top: 50px;
-    padding-left: 200;
+    padding-left: 60px;
     padding-bottom: 60px;
 }
 .button{
-    padding-left: 80%;
+    padding-left: 75%;
     color: green;
 }
 a {
@@ -78,4 +86,103 @@ a {
   
   .duvida1 .resp1 {
     padding-left: 20px;
+  }
+
+  @media (max-width: 450px) {
+
+    header{
+        padding-top: 3%;
+        padding-bottom: 5%;
+        justify-content:space-between;
+        display:flex;
+        flex-direction:row;
+        background-color:black;
+        color:white;
+        align-items:center;
+    }
+
+    img{
+        width:25vw;
+    }
+
+    #boas_vindas{
+        display:flex;
+        text-align: center;
+        font-size: 10px;
+        
+    }
+
+    #duvidas_conta_logout{
+        display:flex;
+        flex-direction:column;
+        padding-right:20px;
+        gap:7px;
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 100px;
+        margin-top: 220px;
+        justify-content: space-around;
+        background: #f2f2f2;
+    }
+
+    main {
+        height: 500px;
+    }
+
+
+    .information_footer {
+        display: inline-block;
+    }
+    
+    #div_redes_sociais a {
+        display: inline;
+    }
+
+    #div_redes_sociais i {
+        font-size: 28px;
+    }
+
+    .aluno{
+        padding-top: 50px;
+        padding-left: 40%;
+        padding-bottom: 20px;
+    }
+
+    .duvida1{
+        display: flex;
+        font-size: 13px;
+        padding-top: 130px;
+        padding-left: 0px;
+        padding-bottom: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+    .duvida2{
+        padding-left: 0px;
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+    }
+    .box2{
+        padding-top: 50px;
+        padding-left: 200;
+        padding-bottom: 60px;
+    }
+    .button{
+        padding-left: 0%;
+        color: green;
+    }
+    a {
+        text-decoration: none;
+    }
+    .duvida1 h3 {
+        margin-right: 20px;
+      }
+      
+      .duvida1 .resp1 {
+        padding-left: 20px;
+      }
   }
