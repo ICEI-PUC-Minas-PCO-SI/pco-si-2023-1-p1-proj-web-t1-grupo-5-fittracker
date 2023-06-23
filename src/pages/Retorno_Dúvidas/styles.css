@@ -10,8 +10,10 @@ header{
     align-items:center;
 }
 img{
-    width:20vw;
+    padding-top: 8%;
+    width: 13vw;
 }
+
 #boas_vindas{
     display:flex;
     align-items:center;
@@ -27,6 +29,7 @@ img{
 footer{
     display:flex;
     padding: 20px 100PX;
+    margin-top: 12.5%;
     justify-content:space-between;
     background:#F2F2F2;
 }
@@ -53,13 +56,14 @@ footer a{
 }
 .duvida1{
     display: flex;
-    padding-top: 50px;
-    padding-left: 200px;
+    padding-top: 100px;
+    padding-left: 210px;
     padding-bottom: 40px;
 }
 .duvida2{
-    padding-left: 220px;
+    padding-left: 230px;
 }
+
 .box2{
     padding-top: 50px;
     padding-left: 200;
@@ -78,4 +82,95 @@ a {
   
   .duvida1 .resp1 {
     padding-left: 20px;
+  }
+
+  @media (max-width: 500px) {
+    header{
+        justify-content:space-between;
+        display:flex;
+        flex-direction:row;
+        background-color:black;
+        color:white;
+        align-items:center;
+    }
+
+    img{
+        width: 40vw;
+    }
+
+    #boas_vindas{
+        display:flex;
+        align-items:center;
+        font-size: 10px;
+    }
+    #duvidas_conta_logout{
+        display:flex;
+        flex-direction:column;
+        padding-right:30px;
+        gap:10px;
+    }
+    
+    footer{
+        display:inline-block;
+        padding: 20px 100PX;
+        margin-top: 40%;
+        background:#F2F2F2;
+    }
+    main{
+        height:500px;
+    }
+    footer a{
+        display:block;
+    }
+    .information_footer{
+        display:inline-block;
+    }
+    #div_redes_sociais a{
+        display:inline;
+    }
+    
+    #div_redes_sociais i{
+        font-size:28px;
+    }
+
+    .aluno{
+        padding-top: 50px;
+        padding-left: 40%;
+        padding-bottom: 20px;
+    }
+
+    .duvida1{
+        display: flex;
+        padding-top: 110px;
+        padding-left: 70px;
+        padding-bottom: 40px;
+        font-size: 17px;
+    }
+
+    .duvida2{
+        font-size: 13px;
+        padding-left: 20px;
+    }
+
+    .box2{
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-bottom: 60px;
+    }
+
+    .button{
+        padding-left: 35%;
+        color: green;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    .duvida1 h3 {
+        margin-right: 20px;
+      }
+      
+      .duvida1 .resp1 {
+        padding-left: 20px;
+      }
   }
