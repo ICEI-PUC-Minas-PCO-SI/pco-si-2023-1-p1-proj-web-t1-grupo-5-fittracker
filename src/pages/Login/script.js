@@ -1,18 +1,34 @@
-import { axios } from '../../lib/axios.js';
+document.getElementById("botaoLogin").addEventListener("click", function (event) {
+  event.preventDefault(); // Impede o envio do formulário
 
-    console.log("ok");
-    let botaoLogin = document.getElementById("botaoLogin");
+  // Obtém os valores dos campos
+  var username = document.getElementById("user").value;
+  var password = document.getElementById("senha").value;
 
-    async function createUser() {
-        console.log("Entrou")
-    const { description, price, category, type } = data;
-
-    const response = await api.post('transactions', {
-      description,
-      price,
-      category,
-      type,
-      createdAt: new Date(),
-    });
-
+  // Validação dos campos (opcional)
+  if (!username || !password) {
+    alert("Por favor, preencha todos os campos.");
+    return;
   }
+
+  fetch(`http://localhost:3000/alunos?senha=${password}&login=${username}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then((res => {
+    return res.json()
+  })).then((res) => {
+    if (res.length > 0) {
+      alert("logado ")
+      document.getElementById("user").value = "";
+      document.getElementById("senha").value = "";
+
+      window.location.href = "../Principal_trainner/index.html";
+
+    } else {
+      alert("Usuário ou senha incorretos")
+    }
+    console.log(res);
+  })
+});

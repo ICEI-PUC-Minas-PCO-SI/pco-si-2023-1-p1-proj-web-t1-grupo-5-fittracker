@@ -92,7 +92,7 @@ select {
   outline: none;
   /* opacity:.5; */
 }
-#botaoLogin {
+.botaoUsuario {
   border: 0;
   width: 60%;
   padding: 6px 15px;
@@ -180,5 +180,8 @@ footer p {
 @media (max-width: 522px) {
   #mainContent {
     justify-content: center;
+  }
+  #mainMessage {
+    display: none;
   }
 }
