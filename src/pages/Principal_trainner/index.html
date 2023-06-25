@@ -31,7 +31,7 @@
       <img src="../../assets/logo.svg" alt="Logo" />
     </div>
     <div class="item_header" id="boas_vindas">
-      <h2>Seja bem vindo, Treinador Pablo Victor!</h2>
+      <h2 id="header_treinador">Seja bem vindo, Treinador Pablo Victor!</h2>
 
     </div>
     <div class="item_header" id="duvidas_conta_logout">
@@ -129,8 +129,26 @@
         </a>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
     <script src="../Dúvidas_Aluno/script.js"></script>
     <script>
+      getDadosUsu();
+            function getDadosUsu(){
+                $.ajax({
+                  method: "POST",
+                  url: `http://localhost:3000/usuarios`,
+                  success:function(data){
+                      data = JSON.parse(data);
+                      console.log(data);
+                      
+                  },
+                  error:function (xhr, status, error){
+                    alert("Erro ao conectar com o servidor. Por favor tente novamente mais tarde.");
+                    console.log(xhr, status, error);
+                  }
+                });
+            }
       // Obter valores do localStorage
       var assunto = localStorage.getItem("assunto");
       var mensagem = localStorage.getItem("mensagem");
@@ -139,6 +157,7 @@
       document.getElementById("assunto").innerText = assunto;
       document.getElementById("mensagem").innerText = mensagem;
   </script>
+    <script src="./script.js" type="module"></script>
   </body>
   </html>
   <style>
