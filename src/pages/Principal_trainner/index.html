@@ -54,7 +54,8 @@
             <h4 class="text-bold" style=" padding-top: 1%; padding-left: 10%;"><p1>Marcos Cardoso</p1></h4>
           </a>
           <a href="../treino_dieta_professor/index.html">
-            <h4 class="text-bold" style=" padding-top: 1%; padding-left: 10%;"><p1>Juliette Dorneles</p1></h4>
+            <h4 class="text-bold"
+            style=" padding-top: 1%; padding-left: 10%;"><p1>Juliette Dorneles</p1></h4>
           </a>
           <a href="../treino_dieta_professor/index.html">
             <h4 class="text-bold" style=" padding-top: 1%; padding-left: 10%;"><p1>Carlos Almeida</p1></h4>
@@ -89,6 +90,11 @@
                       <a href="../Retorno_Dúvidas/index.html"><h5 class="text-bold">Dúvida Alimentação</h5></a>
                       <a href="../retorno_feedback/index.html"><h5 class="text-bold">Feedback Semanal</h5></a>
                       <a href="../Retorno_Dúvidas/index.html"><h5 class="text-bold">Dúvida treino</h5></a>
+                      <div class="inicio">
+                        <div class="duvida1">
+                          <a href="../Retorno_Dúvidas/index.html"><h5 id="assunto"></h5></a>
+                        </div>
+                    </div>
                     </td>
                     <td>
                       <h5 class="text-bold" style="color: #54cf80">Concluído</h5>
@@ -123,6 +129,16 @@
         </a>
       </div>
     </footer>
+    <script src="../Dúvidas_Aluno/script.js"></script>
+    <script>
+      // Obter valores do localStorage
+      var assunto = localStorage.getItem("assunto");
+      var mensagem = localStorage.getItem("mensagem");
+
+      // Preencher elementos HTML com os valores
+      document.getElementById("assunto").innerText = assunto;
+      document.getElementById("mensagem").innerText = mensagem;
+  </script>
   </body>
   </html>
   <style>
