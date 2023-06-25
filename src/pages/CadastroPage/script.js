@@ -24,7 +24,7 @@ document.getElementById("botaoCadastro").addEventListener("click", function (eve
         senha: senha,
         codigo_treinador: isAluno ? codigo_treinador : null
     };
-    fetch(`http://localhost:3000/alunos?login=${login}`, {
+    fetch(`http://localhost:3000/usuarios?login=${login}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -33,11 +33,12 @@ document.getElementById("botaoCadastro").addEventListener("click", function (eve
         return res.json()
     })).then((res) => {
         if (res.length > 0) {
+            console.log('res: ', res);
             alert("Já existe um usuário com o mesmo nome de usuário, digite outro")
             return
         } else {
 
-            fetch("http://localhost:3000/alunos", {
+            fetch("http://localhost:3000/usuarios", {
                     method: "POST",
                     body: JSON.stringify(dados),
                     headers: {
