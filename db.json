@@ -1,18 +1,5 @@
 {
   "usuarios": [
-    {
-      "nome": "asdfsdf",
-      "login": "sdfsdfs",
-      "senha": "sdfsdfsd",
-      "codigo_treinador": "sdfsdfsdf",
-      "id": 1
-    },
-    {
-      "nome": "dsfsdf",
-      "login": "sdfsdfsd",
-      "senha": "sdfsdfsd",
-      "codigo_treinador": null,
-      "id": 2
-    }
+    
   ]
 }

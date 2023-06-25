@@ -54,6 +54,7 @@ document.getElementById("botaoCadastro").addEventListener("click", function (eve
                 })
                 .then(function (resultado) {
                     alert("Usuário cadastrado com sucesso.");
+                    usuarioCadastrado = true;
                     document.getElementById("nome").value = "";
                     document.getElementById("login").value = "";
                     document.getElementById("senha").value = "";
@@ -64,4 +65,10 @@ document.getElementById("botaoCadastro").addEventListener("click", function (eve
                 });
         }
     })
+    if (isAluno) {
+        window.location.href = "../treino_dieta/index.html";
+    } else {
+        window.location.href = "../Principal_trainner/index.html";
+    }
+
 });
