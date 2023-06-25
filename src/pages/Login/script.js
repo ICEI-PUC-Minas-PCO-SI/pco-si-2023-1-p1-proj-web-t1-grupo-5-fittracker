@@ -17,10 +17,11 @@ document.getElementById("botaoLogin").addEventListener("click", function (event)
       "Content-Type": "application/json"
     }
   }).then((res => {
+    console.log(res);
     return res.json()
+
   })).then((res) => {
     if (res.length > 0) {
-      alert("logado ")
       document.getElementById("user").value = "";
       document.getElementById("senha").value = "";
 

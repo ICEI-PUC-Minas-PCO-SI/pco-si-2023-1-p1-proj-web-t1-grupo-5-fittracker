@@ -6,7 +6,7 @@ document.getElementById("isAluno").addEventListener("change", function (event) {
         document.getElementById("codigo_treinador").style.display = "flex";
     }
 });
-document.getElementById("botaoCadastro").addEventListener("click", function (event) {
+document.getElementById("botaoCadastro").addEventListener("click", async function (event) {
     var nome = document.getElementById("nome").value;
     var login = document.getElementById("login").value;
     var senha = document.getElementById("senha").value;
@@ -24,7 +24,7 @@ document.getElementById("botaoCadastro").addEventListener("click", function (eve
         senha: senha,
         codigo_treinador: isAluno ? codigo_treinador : null
     };
-    fetch(`http://localhost:3000/usuarios?login=${login}`, {
+    await fetch(`http://localhost:3000/usuarios?login=${login}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -54,6 +54,7 @@ document.getElementById("botaoCadastro").addEventListener("click", function (eve
                 })
                 .then(function (resultado) {
                     alert("Usuário cadastrado com sucesso.");
+                    usuarioCadastrado = true;
                     document.getElementById("nome").value = "";
                     document.getElementById("login").value = "";
                     document.getElementById("senha").value = "";
@@ -64,4 +65,10 @@ document.getElementById("botaoCadastro").addEventListener("click", function (eve
                 });
         }
     })
+    if (isAluno) {
+        window.location.href = "../treino_dieta/index.html";
+    } else {
+        window.location.href = "../Principal_trainner/index.html";
+    }
+
 });
