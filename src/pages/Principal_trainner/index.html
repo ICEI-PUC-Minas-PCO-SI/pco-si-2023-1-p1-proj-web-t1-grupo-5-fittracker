@@ -144,13 +144,13 @@
               data.tipo_informacao.forEach(value => {
                   html_tabela_principal = `<tr>
                                               <td>
-                                                <h5 class="text-bold">Carlos Almeida</h5>
+                                                <h5 class="text-bold">`+value.nome+`</h5>
                                               </td>
                                               <td>
                                                 <a href="../`+(value.TP_INFORMAÇAO == 1 ? "Retorno_Dúvidas" : "retorno_feedback")+`/index.html"><h5 class="text-bold">`+(value.TP_INFORMAÇAO == 1 ? "Dúvidas" : "Feedback")+`</h5></a>
                                               </td>
                                               <td>
-                                                <h5 class="text-bold" style="color: #54cf80">``</h5>
+                                                <h5 class="text-bold" style="color: #54cf80">`+value.status+`</h5>
                                               </td>
                                           </tr>`;
               });
@@ -164,14 +164,6 @@
             }
         });
     }
-
-    // Obter valores do localStorage
-    var assunto = localStorage.getItem("assunto");
-    var mensagem = localStorage.getItem("mensagem");
-
-    // Preencher elementos HTML com os valores
-    document.getElementById("assunto").innerText = assunto;
-    document.getElementById("mensagem").innerText = mensagem;
 </script>
   <script src="./script.js" type="module"></script>
 </body>
