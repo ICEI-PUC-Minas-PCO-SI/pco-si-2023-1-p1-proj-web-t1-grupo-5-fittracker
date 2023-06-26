@@ -11,16 +11,17 @@ document.getElementById("botaoLogin").addEventListener("click", function (event)
     return;
   }
 
-  fetch(`http://localhost:3000/alunos?senha=${password}&login=${username}`, {
+  fetch(`http://localhost:3000/usuarios?senha=${password}&login=${username}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json"
     }
   }).then((res => {
+    console.log(res);
     return res.json()
+
   })).then((res) => {
     if (res.length > 0) {
-      alert("logado ")
       document.getElementById("user").value = "";
       document.getElementById("senha").value = "";
 
