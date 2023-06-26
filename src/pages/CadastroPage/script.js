@@ -6,7 +6,7 @@ document.getElementById("isAluno").addEventListener("change", function (event) {
         document.getElementById("codigo_treinador").style.display = "flex";
     }
 });
-document.getElementById("botaoCadastro").addEventListener("click", async function (event) {
+document.getElementById("botaoCadastro").addEventListener("click", function (event) {
     var nome = document.getElementById("nome").value;
     var login = document.getElementById("login").value;
     var senha = document.getElementById("senha").value;
@@ -24,7 +24,7 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
         senha: senha,
         codigo_treinador: isAluno ? codigo_treinador : null
     };
-    await fetch(`http://localhost:3000/usuarios?login=${login}`, {
+    fetch(`http://localhost:3000/alunos?login=${login}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -33,12 +33,11 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
         return res.json()
     })).then((res) => {
         if (res.length > 0) {
-            console.log('res: ', res);
             alert("Já existe um usuário com o mesmo nome de usuário, digite outro")
             return
         } else {
 
-            fetch("http://localhost:3000/usuarios", {
+            fetch("http://localhost:3000/alunos", {
                     method: "POST",
                     body: JSON.stringify(dados),
                     headers: {
@@ -54,7 +53,6 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
                 })
                 .then(function (resultado) {
                     alert("Usuário cadastrado com sucesso.");
-                    usuarioCadastrado = true;
                     document.getElementById("nome").value = "";
                     document.getElementById("login").value = "";
                     document.getElementById("senha").value = "";
@@ -65,10 +63,4 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
                 });
         }
     })
-    if (isAluno) {
-        window.location.href = "../treino_dieta/index.html";
-    } else {
-        window.location.href = "../Principal_trainner/index.html";
-    }
-
 });
