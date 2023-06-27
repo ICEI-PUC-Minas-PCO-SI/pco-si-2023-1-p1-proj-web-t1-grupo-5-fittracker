@@ -38,7 +38,6 @@ const nome = urlParams.get("nome");
         });
     }
 
-
     function getFedback(){
         $.ajax({
             method: "GET",
@@ -63,10 +62,11 @@ const nome = urlParams.get("nome");
             method: "POST",
             url: `http://localhost:3000/tipo_informacao`,
             data: {
-                NOME_ALUNO : nome,
+                NOME_ALUNO:nome,
                 STATUS: 'C',
-                assunto:null,
-                mensagem:$("#retorno_feedback").text()
+                assunto: null,
+                mensagem: $("#assunto").html(),
+                mensagem_prodfessor : $("#retorno_feedback").text()
             },
             datatype: "json",
             success:function(data){
