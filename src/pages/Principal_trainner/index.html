@@ -100,7 +100,7 @@
 
     $(document).ready(function(){
       alunos_professor();
-      // monta_tabela_principal_trainner();
+      monta_tabela_principal_trainner();
     })
 
     function alunos_professor(){
@@ -137,34 +137,34 @@
         });
     }
     
-    // function monta_tabela_principal_trainner(){
-    //     $.ajax({
-    //         method: "GET",
-    //         url: `http://localhost:3000/tipo_informacao`,
-    //         success:function(data){            
-    //          var html_tabela_principal = "";
-    //           data.forEach(value => {
-    //               html_tabela_principal = `<tr>
-    //                                           <td>
-    //                                             <h5 class="text-bold">`+value.nome+`</h5>
-    //                                           </td>
-    //                                           <td>
-    //                                             <a href="../`+(value.TP_INFORMAÇAO == 1 ? "Retorno_Dúvidas" : "retorno_feedback")+`/index.html"><h5 class="text-bold">`+(value.TP_INFORMAÇAO == 1 ? "Dúvidas" : "Feedback")+`</h5></a>
-    //                                           </td>
-    //                                           <td>
-    //                                             <h5 class="text-bold" style="color: #54cf80">`+value.status+`</h5>
-    //                                           </td>
-    //                                       </tr>`;
-    //           });
+    function monta_tabela_principal_trainner(){
+        $.ajax({
+            method: "GET",
+            url: `http://localhost:3000/tipo_informacao`,
+            success:function(data){            
+             var html_tabela_principal = "";
+              data.forEach(value => {
+                  html_tabela_principal = `<tr>
+                                              <td>
+                                                <h5 class="text-bold">`+value.NOME_ALUNO+`</h5>
+                                              </td>
+                                              <td>
+                                                <a href="../`+(value.TP_INFORMAÇAO == 1 ? "Retorno_Dúvidas" : "retorno_feedback")+`/index.html"><h5 class="text-bold">`+(value.TP_INFORMAÇAO == 1 ? "Dúvidas" : "Feedback")+`</h5></a>
+                                              </td>
+                                              <td>
+                                                <h5 class="text-bold" style="color: #54cf80">`+(value.STATUS == 'P' ? "Pendente" : "Concluído")+`</h5>
+                                              </td>
+                                          </tr>`;
+              });
               
-    //         $("#body_table").html(html_tabela_principal);
-    //         },
-    //         error:function (xhr, status, error){
-    //           alert("Erro ao conectar com o servidor. Por favor tente novamente mais tarde.");
-    //           console.log(xhr, status, error);
-    //         }
-    //     });
-    // }
+            $("#body_table").html(html_tabela_principal);
+            },
+            error:function (xhr, status, error){
+              alert("Erro ao conectar com o servidor. Por favor tente novamente mais tarde.");
+              console.log(xhr, status, error);
+            }
+        });
+    }
 </script>
   <script src="./script.js" type="module"></script>
 </body>
