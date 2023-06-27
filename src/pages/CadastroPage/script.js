@@ -6,6 +6,7 @@ document.getElementById("isAluno").addEventListener("change", function (event) {
         document.getElementById("codigo_treinador").style.display = "flex";
     }
 });
+var criaUsuario = false;
 document.getElementById("botaoCadastro").addEventListener("click", async function (event) {
     var nome = document.getElementById("nome").value;
     var login = document.getElementById("login").value;
@@ -24,7 +25,7 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
         senha: senha,
         codigo_treinador: isAluno ? codigo_treinador : null
     };
-    await fetch(`http://localhost:3000/usuarios?login=${login}`, {
+    var jaExisteUsuario = await fetch(`http://localhost:3000/usuarios?login=${login}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -33,42 +34,59 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
         return res.json()
     })).then((res) => {
         if (res.length > 0) {
-            console.log('res: ', res);
-            alert("Já existe um usuário com o mesmo nome de usuário, digite outro")
-            return
+            return true;
         } else {
-
-            fetch("http://localhost:3000/usuarios", {
-                    method: "POST",
-                    body: JSON.stringify(dados),
-                    headers: {
-                        "Content-Type": "application/json"
-                    }
-                })
-                .then(function (response) {
-                    if (response.ok) {
-                        return response.json();
-                    } else {
-                        throw new Error("Erro ao cadastrar usuário.");
-                    }
-                })
-                .then(function (resultado) {
-                    alert("Usuário cadastrado com sucesso.");
-                    usuarioCadastrado = true;
-                    document.getElementById("nome").value = "";
-                    document.getElementById("login").value = "";
-                    document.getElementById("senha").value = "";
-                    document.getElementById("isAluno").value = "1";
-                })
-                .catch(function (error) {
-                    console.log("erro")
-                });
+            return false;
         }
     })
-    if (isAluno) {
-        window.location.href = "../treino_dieta/index.html";
+    var idUsuario = 0
+    if (!jaExisteUsuario) {
+        criaUsuario = await fetch("http://localhost:3000/usuarios", {
+                method: "POST",
+                body: JSON.stringify(dados),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(function (response) {
+                if (response.ok) {
+                    return true;
+                } else {
+                    throw new Error("Erro ao cadastrar usuário.");
+                }
+            })
+            .catch(function (error) {
+                console.log("erro")
+            });
+
+        if (criaUsuario) {
+            var usuarioCriado = await fetch(`http://localhost:3000/usuarios?login=${login}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then((res) => {
+                return res.json()
+            }).then((res) => {
+                idUsuario = res[0].id;
+            })
+        }
+        if (isAluno) {
+            window.location.href = `../treino_dieta/index.html?id=${idUsuario}`;
+        } else {
+            window.location.href = `../Principal_trainner/index.html?id=${idUsuario}`;
+        }
+
+        alert("Usuário cadastrado com sucesso.");
+        usuarioCadastrado = true;
+        document.getElementById("nome").value = "";
+        document.getElementById("login").value = "";
+        document.getElementById("senha").value = "";
+        document.getElementById("isAluno").value = "1";
     } else {
-        window.location.href = "../Principal_trainner/index.html";
+        alert("Já existe um usuário com o mesmo nome de usuário, digite outro")
+
     }
+
 
 });
