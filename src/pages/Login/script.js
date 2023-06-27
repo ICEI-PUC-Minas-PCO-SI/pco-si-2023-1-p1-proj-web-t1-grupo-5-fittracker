@@ -20,7 +20,6 @@ document.getElementById("botaoLogin").addEventListener("click", function (event)
     return res.json()
   })).then((res) => {
     if (res.length > 0) {
-      alert("logado ")
       document.getElementById("user").value = "";
       document.getElementById("senha").value = "";
 
