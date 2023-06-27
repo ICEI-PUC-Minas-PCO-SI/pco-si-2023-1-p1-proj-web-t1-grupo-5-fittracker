@@ -23,7 +23,7 @@ document.getElementById("botaoLogin").addEventListener("click", function (event)
       document.getElementById("user").value = "";
       document.getElementById("senha").value = "";
 
-      window.location.href = "../Principal_trainner/index.html";
+      window.location.href = `../Principal_trainner/index.html?id=${res[0].id}`;
 
     } else {
       alert("Usuário ou senha incorretos")
