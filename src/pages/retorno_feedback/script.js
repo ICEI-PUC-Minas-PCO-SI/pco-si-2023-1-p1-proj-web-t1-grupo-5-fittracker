@@ -66,7 +66,7 @@ const nome = urlParams.get("nome");
                 STATUS: 'C',
                 assunto: null,
                 mensagem: $("#assunto").html(),
-                mensagem_prodfessor : $("#retorno_feedback").text()
+                mensagem_professor : $("#retorno_feedback").text()
             },
             datatype: "json",
             success:function(data){
