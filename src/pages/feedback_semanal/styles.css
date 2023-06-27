@@ -38,7 +38,6 @@ footer{
     padding: 20px 100PX;
     justify-content:space-between;
     background:#F2F2F2;
-    margin-top: 100px;
 }
 footer a{
     display:block;
@@ -72,4 +71,5 @@ footer p{
 
 main {
     margin-top: 3%;
+    height: 500px;
 }
