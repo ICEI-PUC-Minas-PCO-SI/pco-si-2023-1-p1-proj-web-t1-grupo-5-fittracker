@@ -26,13 +26,13 @@ $.ajax({
 function salvarDados() {
   var treino = document.getElementById("treino").value;
   var dieta = document.getElementById("dieta").value;
-
+  var id_aluno = id;
   // Criar um objeto JSON com os dados
   var data = {
     treino: treino,
-    dieta: dieta
+    dieta: dieta,
+    id_aluno: id_aluno,
   };
-  console.log("aq");
   // Enviar uma requisição POST para salvar os dados no JSON Server
   $.ajax({
     method: "POST",
@@ -40,7 +40,7 @@ function salvarDados() {
     data: data,
     success: function (response) {
       window.location.href = `../Principal_trainner/index.html?id=${id_professor}`;
-      alert("Dados salvos com sucesso!");
+      alert("Dieta e treino salvos com sucesso!");
 
     },
     error: function (xhr, status, error) {
