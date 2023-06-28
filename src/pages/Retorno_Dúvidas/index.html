@@ -21,9 +21,7 @@
             <img src="../../assets/logo.svg" alt="Logo">
         </div>
         <div class="item_header" id="boas_vindas">
-            <h2>
-                Seja bem vindo, usuário!
-            </h2>
+            <h2 id="header_treinador"></h2>
         </div>
         <div class="item_header" id="duvidas_conta_logout">
             <a href="../Principal_trainner/index.html">Home</a>
@@ -31,6 +29,9 @@
         </div>
     </header>
     <main>
+        <h2 style="text-align: center">
+            <b id="nome_aluno"></b>
+          </h2>
         <div class="inicio">
             <h3>Dúvidas:</h3>
             <div class="duvida1">
@@ -44,6 +45,7 @@
                 </div>
                 <div class="button">
                     <button
+                    onclick="setDuvida()"
                       type="button"
                       class="btn btn-lg rounded-pill"
                       style="
@@ -53,7 +55,7 @@
                         border: 0;
                         border-radius: 210px;
                       "
-                        onclick="salvarDadosRespTreinador()"
+                    
                     >
                       Salvar
                     </button>
@@ -78,6 +80,8 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
 </body>
 
 </html>
