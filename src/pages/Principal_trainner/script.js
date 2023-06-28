@@ -24,7 +24,7 @@ function alunos_professor() {
 
       var html_alunos_professor = "<h3 style='margin-top: 60px; padding-left: 10%;'><p2><b>Alunos</b></p2></h3>";
       valores_position.forEach(value => {
-        html_alunos_professor += `<a href="../treino_dieta_professor/index.html?id=` + value.id + `&id_professor=${id}"">
+        html_alunos_professor += `<a href="../treino_dieta_professor/index.html?id=` + value.id + `&id_treinador=${id}"">
                                               <h4 class="text-bold" style=" padding-top: 5%; padding-left: 10%;"><p1>` + value.nome + `</p1></h4>
                                           </a>`;
       });
@@ -46,17 +46,19 @@ function monta_tabela_principal_trainner() {
     success: function (data) {
       var html_tabela_principal = "";
       data.forEach(value => {
-        html_tabela_principal = `<tr>
-                                              <td>
-                                                <h5 class="text-bold">` + value.NOME_ALUNO + `</h5>
-                                              </td>
-                                              <td>
-                                                <a href="../` + (value.TP_INFORMAÇAO == 1 ? "Retorno_Dúvidas" : "retorno_feedback") + `/index.html?nome=` + value.NOME_ALUNO + `&id=` + id + `"><h5 class="text-bold">` + (value.TP_INFORMAÇAO == 1 ? "Dúvidas" : "Feedback") + `</h5></a>
-                                              </td>
-                                              <td>
-                                                <h5 class="text-bold" style="color: #54cf80">` + (value.STATUS == 'P' ? "Pendente" : "Concluído") + `</h5>
-                                              </td>
-                                          </tr>`;
+        if (value.id_treinador == id) {
+          html_tabela_principal = `<tr>
+                                    <td>
+                                      <h5 class="text-bold">` + value.NOME_ALUNO + `</h5>
+                                    </td>
+                                    <td>
+                                      <a href="../` + (value.TP_INFORMAÇAO == 1 ? "Retorno_Dúvidas" : "retorno_feedback") + `/index.html?nome=` + value.NOME_ALUNO + `&id=` + id + `"><h5 class="text-bold">` + (value.TP_INFORMAÇAO == 1 ? "Dúvidas" : "Feedback") + `</h5></a>
+                                    </td>
+                                    <td>
+                                      <h5 class="text-bold" style="color: #54cf80">` + (value.STATUS == 'P' ? "Pendente" : "Concluído") + `</h5>
+                                    </td>
+                                </tr>`;
+        }
       });
 
       $("#body_table").html(html_tabela_principal);

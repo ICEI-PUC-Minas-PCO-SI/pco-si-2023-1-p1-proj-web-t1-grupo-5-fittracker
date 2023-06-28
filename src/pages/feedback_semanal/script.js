@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const nome = urlParams.get("nome");
+let id_treinador = urlParams.get("id_treinador");
 
 $.ajax({
   method: "GET",
@@ -25,6 +26,7 @@ function setFedback() {
     method: "POST",
     url: `http://localhost:3000/tipo_informacao`,
     data: {
+      id_treinador: id_treinador,
       NOME_ALUNO: nome,
       STATUS: 'P',
       assunto: null,
