@@ -2,6 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const nome = urlParams.get("nome");
 
+var NOME_ALUNO = "";
 $.ajax({
     method: "GET",
     url: `http://localhost:3000/usuarios`,
@@ -10,6 +11,7 @@ $.ajax({
         if (value.id == id) {
           $("#bem_vindo").html("Seja bem vindo,  " + value.nome);
           $("#cod_prof").html(value.id);
+          NOME_ALUNO = value.nome;
         }
       });
       return true;
@@ -25,7 +27,8 @@ function setFedback(){
         method: "POST",
         url: `http://localhost:3000/tipo_informacao`,
         data: {
-            NOME_ALUNO:nome,
+            NOME_ALUNO:NOME_ALUNO,
+            TP_INFORMACAO: 2,
             STATUS: 'P',
             assunto: null,
             mensagem: $("#mensagem").text(),
