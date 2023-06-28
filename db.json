@@ -1,16 +1,13 @@
 {
   "usuarios": [
-
+    {
+      "nome": "Matheus",
+      "login": "uomatheux",
+      "senha": "Amarelo@10",
+      "codigo_treinador": "100",
+      "id": 1
+    }
   ],
-
-  "tipo_informacao": [
-
-  ],
-
-  
-    "treino_dieta": [
-      
-  ]
-
+  "tipo_informacao": [],
+  "treino_dieta": []
 }
-
