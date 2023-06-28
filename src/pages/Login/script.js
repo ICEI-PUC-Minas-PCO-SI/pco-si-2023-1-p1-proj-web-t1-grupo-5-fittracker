@@ -24,7 +24,7 @@ document.getElementById("botaoLogin").addEventListener("click", function (event)
       document.getElementById("senha").value = "";
       console.log(res[0]);
       if (res[0].codigo_treinador == null) {
-        window.location.href = `../Principal_trainner/index.html?id=${res[0].id}`;
+        // window.location.href = `../Principal_trainner/index.html?id=${res[0].id}`;
       } else {
         window.location.href = `../treino_dieta/index.html?id=${res[0].id}`;
       }
