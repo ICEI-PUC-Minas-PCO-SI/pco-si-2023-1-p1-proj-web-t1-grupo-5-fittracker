@@ -38,6 +38,7 @@ footer{
     padding: 20px 100PX;
     justify-content:space-between;
     background:#F2F2F2;
+    margin-top: 30px;
 }
 footer a{
     display:block;
