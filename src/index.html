@@ -1,75 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
 
-    <title>Fit Tracker</title>
-    <!-- Link Css -->
-    <link rel="stylesheet" href="./pages/login/styles.css" />
-    <!-- Link Css Global -->
-    <link rel="stylesheet" href="./styles/global.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-  <body>
-    <div id="background">
-      <header>
-        <div class="item_header">
-          <img src="./assets/logoLogin.svg" alt="Logo" />
+  <title>Fit Tracker</title>
+  <!-- Link Css -->
+  <link rel="stylesheet" href="./pages/login/styles.css" />
+  <!-- Link Css Global -->
+  <link rel="stylesheet" href="./styles/global.css" />
+</head>
+
+<body>
+  <div id="background">
+    <header>
+      <div class="item_header">
+        <img src="./assets/logoLogin.svg" alt="Logo" />
+      </div>
+    </header>
+    <main>
+      <div id="mainContent">
+        <div id="mainMessage">
+          <h1>Atinja seu objetivo de forma segura e eficiente!</h1>
         </div>
-      </header>
-      <main>
-        <div id="mainContent">
-          <div id="mainMessage">
-            <h1>Atinja seu Objetivo de forma segura e eficiente!</h1>
-          </div>
-          <div id="div_login">
-            <h1>Login</h1>
-            <input placeholder="Usuário" type="text" />
-            <input placeholder="Senha" type="password" />
-            <a
-              id="botaoLogin"
-              onClick="createUser();"
-              href="./pages/Principal_trainner/index.html"
-              >Entrar</a
-            >
-            <p>
-              Não tem cadastro ainda?<a href="./pages/CadastroPage/index.html"
-                >Cadastrar</a
-              >
-            </p>
-          </div>
+        <div id="div_login">
+          <h1>Login</h1>
+          <input placeholder="Usuário" type="text" />
+          <input placeholder="Senha" type="password" />
+          <a id="botaoLogin" onClick="createUser();" href="./pages/Principal_trainner/index.html">Entrar</a>
+          <p>
+            Não tem cadastro ainda?<a href="./pages/CadastroPage/index.html">Cadastrar</a>
+          </p>
         </div>
-      </main>
-      <footer>
-        <div class="information_footer">
-          <p><b>Sobre nós</b></p>
-          <a href="../QuemSomosPage/index.html">Quem somos?</a>
-        </div>
-        <div class="information_footer">
-          <p><b>Contatos</b></p>
-          <a>fittracker@gmail.com</a>
-          <a>(31)99145-6032</a>
-        </div>
-        <div id="div_redes_sociais">
-          <p><b>Nossas redes sociais</b></p>
-          <a href="https://www.facebook.com/"
-            ><i class="bi bi-facebook"></i>
-          </a>
-          <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i> </a>
-          <a href="https://www.instagram.com/"
-            ><i class="bi bi-instagram"></i>
-          </a>
-        </div>
-      </footer>
-    </div>
-    <script src="./script.js" type="module"></script>
-  </body>
+      </div>
+    </main>
+    <footer>
+      <div class="information_footer">
+        <p><b>Sobre nós</b></p>
+        <a href="../QuemSomosPage/index.html">Quem somos?</a>
+      </div>
+      <div class="information_footer">
+        <p><b>Contatos</b></p>
+        <a>fittracker@gmail.com</a>
+        <a>(31)99145-6032</a>
+      </div>
+      <div id="div_redes_sociais">
+        <p><b>Nossas redes sociais</b></p>
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i> </a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="./script.js" type="module"></script>
+</body>
+
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="jquery-3.6.4.min.js"></script>
