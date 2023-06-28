@@ -53,13 +53,3 @@ function salvarDados() {
 }
 
 
-
-
-
-
-
-// VOCE VAI TER ID DO ALUNO PELA URL    VOCE VAI CRIAR UM JSON QUE VAI TER O TIPO DA INFORMAÇAO , O STATUS E O ALUNO
-// TP_INFORMAÇAO
-// NOME_ALUNO
-// STATUS
-// tipo_informacao
