@@ -1,7 +1,13 @@
 {
-    "alunos": [
-      {
-        
-      }
-    ]
-  }
+  "usuarios": [
+    {
+      
+    }
+  ],
+
+  "tipo_informacao": [
+    {
+
+    }
+  ]
+}
