@@ -22,7 +22,7 @@ const nome = urlParams.get("nome");
                   if(value.codigo_treinador != null && value.codigo_treinador == id){
                     get_aluno.push(value);
                   }
-              });
+              }); 
 
               get_aluno.forEach(value => {
                 if(value.nome == nome){
