@@ -22,6 +22,41 @@ $.ajax({
     console.log(xhr, status, error);
   }
 });
+$.ajax({
+  method: "GET",
+  url: `http://localhost:3000/usuarios`,
+  success: function (data) {
+    data.forEach(value => {
+      if (value.id == id) {
+        $("#nome_aluno").html("Aluno:" + value.nome);
+      }
+
+    });
+    return true;
+  },
+  error: function (xhr, status, error) {
+    alert("Erro ao conectar com o servidor. Por favor tente novamente mais tarde.");
+    console.log(xhr, status, error);
+  }
+});
+$.ajax({
+  method: "GET",
+  url: `http://localhost:3000/treino_dieta`,
+  success: function (data) {
+    data.forEach(value => {
+      if (value.id_aluno == id) {
+        $("#treino").val(value.treino);
+        $("#dieta").val(value.dieta);
+      }
+
+    });
+    return true;
+  },
+  error: function (xhr, status, error) {
+    alert("Erro ao conectar com o servidor. Por favor tente novamente mais tarde.");
+    console.log(xhr, status, error);
+  }
+});
 
 function salvarDados() {
   var treino = document.getElementById("treino").value;
