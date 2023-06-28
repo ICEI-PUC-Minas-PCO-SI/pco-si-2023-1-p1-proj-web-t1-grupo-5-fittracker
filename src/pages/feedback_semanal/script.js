@@ -15,7 +15,7 @@ function setFedback(){
         },
         datatype: "json",
         success:function(data){
-            alert("Retorno enviado com sucesso.");
+            alert("Feedback enviado com sucesso.");
             window.location.href = `../Principal_trainner/index.html?id=${id}`;
         return true;
         },
