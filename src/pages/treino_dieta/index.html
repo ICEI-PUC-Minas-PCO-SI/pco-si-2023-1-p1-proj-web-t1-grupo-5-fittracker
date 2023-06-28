@@ -17,6 +17,8 @@
   </head>
 
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
     <header>
       <div class="item_header">
         <img src="../../assets/logo.svg" alt="Logo" />
@@ -36,28 +38,14 @@
       <div class="menu-container">
         <div class="menu">
           <h3>Treino</h3>
-          <strong><p style="margin-top: 12px">Segunda-Feira</p></strong>
-          <p style="margin-top: 5px">Peito/Ombro/Tríceps</p>
-
-          <strong><p style="margin-top: 12px">Quarta-Feira</p></strong>
-          <p style="margin-top: 5px">Costas/Bíceps/Trapézio</p>
-
-          <strong><p style="margin-top: 12px">Sexta-Feira</p></strong>
-          <p style="margin-top: 5px">Quadríceps/Posterior/Panturrilha</p>
+          <textarea id="treino" style="margin-top: 12px"></textarea>
         </div>
 
         <div class="divisoria"></div>
 
         <div class="menu">
           <h3>Dieta</h3>
-          <strong><p style="margin-top: 12px">Proteínas</p></strong>
-          <p style="margin-top: 5px">150g</p>
-
-          <strong><p style="margin-top: 12px">Carboidratos</p></strong>
-          <p style="margin-top: 5px">323g</p>
-
-          <strong><p style="margin-top: 12px">Gorduras</p></strong>
-          <p style="margin-top: 5px">59g</p>
+          <textarea id="dieta" style="margin-top: 12px"></textarea>
         </div>
       </div>
 
@@ -70,7 +58,7 @@
               <a href="../retorno_feedback/index.html"
                 ><p>Resposta Feedback semanal</p></a
               >
-             <a href="../retorno_feedback/index.html"> <p id="assunto"></p></a>
+              <a href="../retorno_feedback/index.html"> <p id="assunto"></p></a>
             </div>
             <div class="subtitle">
               <h4 style="margin-top: 5px">Data</h4>
@@ -122,6 +110,6 @@
       // Preencher elementos HTML com os valores
       document.getElementById("assunto").innerText = assunto;
       document.getElementById("mensagem").innerText = mensagem;
-  </script>
+    </script>
   </body>
 </html>
