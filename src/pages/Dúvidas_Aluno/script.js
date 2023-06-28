@@ -6,6 +6,7 @@ $.ajax({
   method: "GET",
   url: `http://localhost:3000/usuarios`,
   success: function (data) {
+    console.log("fgcffgfh")
     data.forEach(value => {
       if (value.id == id) {
         $("#bem_vindo").html("Seja bem vindo,  " + value.nome);
