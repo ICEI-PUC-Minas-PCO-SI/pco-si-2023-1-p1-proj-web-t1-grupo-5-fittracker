@@ -78,39 +78,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
-        
-    <script>
-      var assunto = document.getElementById("assunto").value;
-        var mensagem = document.getElementById("mensagem").value;
-
-        // Criar objeto para armazenar os valores
-        var dados = {
-            assunto: assunto,
-            mensagem: mensagem
-        };
-
-        // Converter objeto para JSON
-        var dadosJSON = JSON.stringify(dados);
-
-        // Armazenar valores usando fetch e POST
-        fetch("http://localhost:3000/duvidas_aluno", {
-            method: "POST",
-            headers: {
-            "Content-Type": "application/json"
-            },
-            body: dadosJSON
-        }).then((res) => {
-            if (res.ok) {
-            // Redirecionar para outra página em caso de sucesso
-            window.location.href = "../Retorno_Dúvidas/.html";
-            } else {
-            // Lidar com erros ou exibir mensagem de falha
-            alert("Erro ao salvar os dados");
-            }
-        }).catch((error) => {
-            console.log(error);
-        });
-    </script>
 </body>
 
 </html>

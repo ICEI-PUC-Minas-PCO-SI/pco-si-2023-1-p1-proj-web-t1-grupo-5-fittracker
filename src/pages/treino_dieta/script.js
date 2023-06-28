@@ -45,3 +45,10 @@ function carregarDadosTreinoDieta() {
     }
   });
 }
+
+$("#enviar_feedback").click(() => {
+  window.location.href = `../feedback_semanal/index.html?id=${id}`;
+})
+$("#enviar_duvida").click(() => {
+  window.location.href = `../Dúvidas_aluno/index.html?id=${id}`;
+})
