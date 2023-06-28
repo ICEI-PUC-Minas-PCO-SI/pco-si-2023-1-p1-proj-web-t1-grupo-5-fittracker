@@ -22,9 +22,12 @@ document.getElementById("botaoLogin").addEventListener("click", function (event)
     if (res.length > 0) {
       document.getElementById("user").value = "";
       document.getElementById("senha").value = "";
-
-      window.location.href = `../Principal_trainner/index.html?id=${res[0].id}`;
-
+      console.log(res[0]);
+      if (res[0].codigo_treinador == null) {
+        window.location.href = `../Principal_trainner/index.html?id=${res[0].id}`;
+      } else {
+        window.location.href = `../treino_dieta/index.html?id=${res[0].id}`;
+      }
     } else {
       alert("Usuário ou senha incorretos")
     }
