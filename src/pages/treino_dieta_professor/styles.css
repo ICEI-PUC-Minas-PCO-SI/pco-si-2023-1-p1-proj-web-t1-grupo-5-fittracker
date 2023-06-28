@@ -25,6 +25,11 @@ header img{
     align-items:center;
     
 }
+#boas_vindas{
+    display:flex;
+    align-items:center;
+    
+}
 #duvidas_conta_logout{
     display:flex;
     flex-direction:column;

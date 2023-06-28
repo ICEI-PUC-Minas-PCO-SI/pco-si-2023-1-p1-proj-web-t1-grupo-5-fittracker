@@ -24,11 +24,11 @@ function alunos_professor() {
 
       var html_alunos_professor = "<h3 style='margin-top: 60px; padding-left: 10%;'><p2><b>Alunos</b></p2></h3>";
       valores_position.forEach(value => {
-        html_alunos_professor += `<a href="../treino_dieta_professor/index.html?id=` + value.id + `">
+        html_alunos_professor += `<a href="../treino_dieta_professor/index.html?id=` + value.id + `&id_professor=${id}"">
                                               <h4 class="text-bold" style=" padding-top: 5%; padding-left: 10%;"><p1>` + value.nome + `</p1></h4>
                                           </a>`;
       });
-
+      console.log(html_alunos_professor);
       $("#alunos_professor").html(html_alunos_professor);
       return true;
     },
