@@ -43,7 +43,7 @@
         <h5 id="menssagem_aluno" style="text-align: left; margin-top: -12%; margin-left: 3%"></h5>
       </div>
       <div class="row">
-        <h4 style="text-align: left; margin-top: -12%; margin-left: 3%">
+        <h4 style="text-align: left; margin-top: -13%; margin-left: 3%">
           <b>Retorno Feedback Semanal</b>
         </h4>
         <h5 style="text-align: left; margin-top: -12%; margin-left: 3%">
@@ -93,6 +93,9 @@
   const id = urlParams.get("id");
   const nome = urlParams.get("nome");
   const text = urlParams.get("text");
+  const id_informacao = urlParams.get("id_informacao");
+  const id_aluno = urlParams.get("id_aluno");
+
 
   $(document).ready(function () {
     $("#nome_aluno").html("Aluno: " + nome);
@@ -129,14 +132,15 @@
     });
   }
 
+
   function getFedback() {
+
     $.ajax({
       method: "GET",
       url: `http://localhost:3000/tipo_informacao`,
       success: function (data) {
         data.forEach((value) => {
-          console.log(value);
-          if (String(nome) == value.NOME_ALUNO && value.TP_INFORMACAO == 2) {
+          if (id_informacao == value.id && value.TP_INFORMACAO == 2) {
             $("#menssagem_aluno").html(text);
           }
         });
@@ -151,16 +155,20 @@
     });
   }
 
+
   function setFedback() {
     $.ajax({
-      method: "POST",
-      url: `http://localhost:3000/tipo_informacao`,
+      method: "PUT",
+      url: `http://localhost:3000/tipo_informacao/${id_informacao}`,
       data: {
         NOME_ALUNO: nome,
+        ID_ALUNO: id_aluno,
+        TP_INFORMACAO: 2,
         STATUS: "C",
         assunto: null,
-        mensagem: $("#assunto").html(),
-        mensagem_professor: $("#retorno_feedback").text(),
+        mensagem: $("#menssagem_aluno").html(),
+        mensagem_professor: $("#retorno_feedback").val(),
+        id_treinador: id,
       },
       datatype: "json",
       success: function (data) {
