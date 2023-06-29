@@ -1,108 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-    <title>Fit Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
 
-    <!-- Link Css -->
-    <link rel="stylesheet" href="../../DefaultLayout.css" />
-    <!-- Link Css Global -->
-    <link rel="stylesheet" href="../../styles/global.css" />
-  </head>
-  <header>
-    <div class="item_header">
-      <img src="../../assets/logo.svg" alt="Logo" />
-    </div>
-    <div class="item_header" id="boas_vindas">
-      <h2 id="header_treinador"></h2>
-    </div>
-    <div class="item_header" id="duvidas_conta_logout">
-      <a href="../Principal_trainner/index.html">Home</a>
-      <a href="../login/index.html"> Sair</a>
-    </div>
-  </header>
+  <title>Fit Tracker</title>
 
-  <body>
-    <main class="row" style="background-color: #ffffff">
-      <h2 style="text-align: center">
-        <b id="nome_aluno"></b>
-      </h2>
+  <!-- Link Css -->
+  <link rel="stylesheet" href="../../DefaultLayout.css" />
+  <!-- Link Css Global -->
+  <link rel="stylesheet" href="../../styles/global.css" />
+</head>
+<header>
+  <div class="item_header">
+    <img src="../../assets/logo.svg" alt="Logo" />
+  </div>
+  <div class="item_header" id="boas_vindas">
+    <h2 id="header_treinador"></h2>
+  </div>
+  <div class="item_header" id="duvidas_conta_logout">
+    <a href="../Principal_trainner/index.html">Home</a>
+    <a href="../login/index.html"> Sair</a>
+  </div>
+</header>
+
+<body>
+  <main class="row" style="background-color: #ffffff">
+    <h2 style="text-align: center">
+      <b id="nome_aluno"></b>
+    </h2>
+    <div class="row">
       <div class="row">
-        <div class="row">
-          <h4 style="text-align: left; margin-top: -11%; margin-left: 3%">
-            <b>Feedback Semanal</b>
-          </h4>
-          <h5
-            id="menssagem_aluno"
-            style="text-align: left; margin-top: -12%; margin-left: 3%"
-          ></h5>
-        </div>
-        <div class="row">
-          <h4 style="text-align: left; margin-top: -12%; margin-left: 3%">
-            <b>Retorno Feedback Semanal</b>
-          </h4>
-          <h5 style="text-align: left; margin-top: -12%; margin-left: 3%">
-            <textarea
-              name=""
-              id="retorno_feedback"
-              cols="102"
-              rows="8"
-              style="max-width: 80%; padding: 10px 10px"
-            ></textarea>
-          </h5>
-          <p id="texto_feedback"></p>
-          <div class="button" style="justify-content: flex-end; display: flex">
-            <button
-              onclick="setFedback()"
-              type="button"
-              class="btn btn-lg rounded-pill"
-              style="
+        <h4 style="text-align: left; margin-top: -11%; margin-left: 3%">
+          <b>Feedback Semanal</b>
+        </h4>
+        <h5 id="menssagem_aluno" style="text-align: left; margin-top: -12%; margin-left: 3%"></h5>
+      </div>
+      <div class="row">
+        <h4 style="text-align: left; margin-top: -12%; margin-left: 3%">
+          <b>Retorno Feedback Semanal</b>
+        </h4>
+        <h5 style="text-align: left; margin-top: -12%; margin-left: 3%">
+          <textarea name="" id="retorno_feedback" cols="102" rows="8"
+            style="max-width: 80%; padding: 10px 10px"></textarea>
+        </h5>
+        <p id="texto_feedback"></p>
+        <div class="button" style="justify-content: flex-end; display: flex">
+          <button onclick="setFedback()" type="button" class="btn btn-lg rounded-pill" style="
                 padding: 0 30px;
                 background-color: rgb(50, 217, 50);
                 color: white;
                 border: 0;
                 border-radius: 210px;
                 margin: 0 20px 10px;
-              "
-            >
-              Salvar
-            </button>
-          </div>
+              ">
+            Salvar
+          </button>
         </div>
       </div>
-    </main>
-  </body>
-  <footer>
-    <div class="information_footer">
-      <b>Sobre nós</b>
-      <a href="../QuemSomosPage/index.html">Quem somos?</a>
     </div>
-    <div class="information_footer">
-      <b>Contatos</b>
-      <a>fittracker@gmail.com</a>
-      <a>(31)99145-6032</a>
-    </div>
-    <div id="div_redes_sociais">
-      <p><b>Nossas redes sociais</b></p>
-      <a><i class="bi bi-facebook"></i> </a>
-      <a><i class="bi bi-twitter"></i> </a>
-      <a><i class="bi bi-instagram"></i> </a>
-    </div>
-  </footer>
+  </main>
+</body>
+<footer>
+  <div class="information_footer">
+    <b>Sobre nós</b>
+    <a href="../QuemSomosPage/index.html">Quem somos?</a>
+  </div>
+  <div class="information_footer">
+    <b>Contatos</b>
+    <a>fittracker@gmail.com</a>
+    <a>(31)99145-6032</a>
+  </div>
+  <div id="div_redes_sociais">
+    <p><b>Nossas redes sociais</b></p>
+    <a><i class="bi bi-facebook"></i> </a>
+    <a><i class="bi bi-twitter"></i> </a>
+    <a><i class="bi bi-instagram"></i> </a>
+  </div>
+</footer>
+
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="jquery-3.6.4.min.js"></script>
@@ -182,8 +164,8 @@
       },
       datatype: "json",
       success: function (data) {
-        alert("Retorno enviado com sucesso.");
         window.location.href = `../Principal_trainner/index.html?id=${id}`;
+        alert("Retorno enviado com sucesso.");
         return true;
       },
       error: function (xhr, status, error) {
