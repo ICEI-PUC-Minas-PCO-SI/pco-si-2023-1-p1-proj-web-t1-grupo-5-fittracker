@@ -1,18 +1,36 @@
-import { axios } from '../../lib/axios.js';
+document.getElementById("botaoLogin").addEventListener("click", function (event) {
+  event.preventDefault(); // Impede o envio do formulário
 
-    console.log("ok");
-    let botaoLogin = document.getElementById("botaoLogin");
+  // Obtém os valores dos campos
+  var username = document.getElementById("user").value;
+  var password = document.getElementById("senha").value;
 
-    async function createUser() {
-        console.log("Entrou")
-    const { description, price, category, type } = data;
-
-    const response = await api.post('transactions', {
-      description,
-      price,
-      category,
-      type,
-      createdAt: new Date(),
-    });
-
+  // Validação dos campos (opcional)
+  if (!username || !password) {
+    alert("Por favor, preencha todos os campos.");
+    return;
   }
+
+  fetch(`http://localhost:3000/usuarios?senha=${password}&login=${username}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then((res => {
+    return res.json()
+  })).then((res) => {
+    if (res.length > 0) {
+      document.getElementById("user").value = "";
+      document.getElementById("senha").value = "";
+      console.log(res[0]);
+      if (res[0].codigo_treinador == null) {
+        window.location.href = `../Principal_trainner/index.html?id=${res[0].id}`;
+      } else {
+        window.location.href = `../treino_dieta/index.html?id=${res[0].id}`;
+      }
+    } else {
+      alert("Usuário ou senha incorretos")
+    }
+    console.log(res);
+  })
+});

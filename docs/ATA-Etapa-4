@@ -1,0 +1,51 @@
+ATA - Registros de Desenvolvimento - [Etapa 4]
+## Informações Gerais
+
+
+## Participantes:
+- João Paulo
+- Matheus Duarte
+- Rodrigo Mota
+- Matheus Amaral
+
+## Atividades Realizadas
+ - João Paulo
+Realizou as telas de cadastro e login, criando todas as funcionalidades da mesma, que diferenciaria alunos e professores. Utilizando JavaScript, 
+implementou a lógica necessária para capturar as informações inseridas pelos usuários no formulário de cadastro e enviá-las ao servidor,
+Para armazenar os dados de usuários, o aluno utilizou o JSON Server como um servidor de API simulado.
+Em resumo, o aluno utilizou JavaScript, AJAX, jQuery e JSON Server para desenvolver uma tela de login e cadastro para alunos e professores, implementando validações, 
+requisições assíncronas, manipulação de elementos HTML e armazenamento de dados. Essas habilidades e ferramentas foram fundamentais para criar uma interface interativa e funcional, 
+oferecendo aos usuários uma experiência agradável e segura no sistema.
+Além disso, ofereceu suporte e auxiliou todo o resto do grupo na criação de suas respectivas telas.
+
+
+ - Matheus Duarte
+Realizou a criação das funcionalidades em JavaScript das telas abaixo, utilizando do JSON Server para salvar os dados de cada campo e reutiliza-los nas
+telas necessárias.
+(treino_dieta), (treino_dieta_professor), (feedback_semanal).
+Na tela (treino_dieta), foi realizado a integração com os dados salvos na tela (treino_dieta_professor) de acordo com cada ID de aluno e professor específico,
+para não haver trocas de informações de maneiras errôneas, também foi criado os campos onde estão disponiveis os retornos do professor e os redirecionamentos
+para outras funcionalidades, tais como dúvidas, feedback e etc. A tela (treino_dieta), é a tela principal do aluno.
+Na tela (feedback_semanal), foi criada a funcionalidade para que o aluno envie um feedback ao professor a cada semana, onde o aluno insere a sua mensagem e salva,
+sendo enviada ao professor em uma proxima tela, a (principal_trainner).
+Além disso, ofereceu suporte e auxiliou todo o resto do grupo na criação de suas respectivas telas.
+
+- Rodrigo Mota
+Realizou as funcionalidades da tela principal do treinador, (principal_trainner) integrados com dados salvos em outras páginas, tais como (feedback_semanal),
+(Dúvidas_Aluno), onde a cada vez que o aluno enviar uma duvida ou um feedback, o professor irá ver em sua tela principal (principal_trainner) tais mensagens.
+Destacando que cada mensagem de aluno é enviada somente ao seu professor individual, podendo o aluno ter apenas um professor e o professor vários alunos.
+Criou as funcionalidades da tela (retorno_feedback) onde o professor é direcionado após clicar no feedback de algum aluno, em sua tela principal e pode assim
+dar um retorno ao aluno.
+Além disso, ofereceu suporte e auxiliou todo o resto do grupo na criação de suas respectivas telas.
+
+- Matheus Amaral
+Criou as funcionalidades das telas (Dúvidas_Aluno) e (Retorno_Dúvidas).
+A tela (Dúvidas_Aluno) é uma tela destinada ao aluno escrever as suas dúvidas que serão enviadas ao professor, que por sua parte terá acesso a elas na sua página
+principal (principal_trainner).
+A tela (Retorno_Dúvidas) é uma tela destinada ao professor responder a dúvida do aluno que enviou a dúvida na tela anterior, destacando que cada professor
+responde a dúvida apenas de seus respectivos alunos.
+Além disso, ofereceu suporte e auxiliou todo o resto do grupo na criação de suas respectivas telas.
+
+## Observações
+Na etapa 4, todas as telas e funcionalidades são extremamente interligadas, sendo assim um pouco díficil diferenciar o que seria trabalhado individualmente
+por cada aluno, sem que um se perdesse no que foi feito pelo outro. Deste modo, preferimos por realizar todas as telas em conjunto e com todos se ajudando.
