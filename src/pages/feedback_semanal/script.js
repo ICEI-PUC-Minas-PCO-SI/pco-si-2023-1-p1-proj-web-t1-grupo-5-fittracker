@@ -1,14 +1,14 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const nome = urlParams.get("nome");
-let id_treinador = urlParams.get("id_treinador");
+const id_treinador = urlParams.get("id_treinador");
 
 var NOME_ALUNO = "";
 $.ajax({
   method: "GET",
   url: `http://localhost:3000/usuarios`,
   success: function (data) {
-    data.forEach(value => {
+    data.forEach((value) => {
       if (value.id == id) {
         $("#bem_vindo").html("Seja bem vindo,  " + value.nome);
         $("#cod_prof").html(value.id);
@@ -18,9 +18,11 @@ $.ajax({
     return true;
   },
   error: function (xhr, status, error) {
-    alert("Erro ao conectar com o servidor. Por favor tente novamente mais tarde.");
+    alert(
+      "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+    );
     console.log(xhr, status, error);
-  }
+  },
 });
 
 function setFedback() {
@@ -30,10 +32,11 @@ function setFedback() {
     data: {
       NOME_ALUNO: NOME_ALUNO,
       TP_INFORMACAO: 2,
-      STATUS: 'P',
-      assunto: null,
-      mensagem: $("#mensagem").text(),
-      mensagem_professor: null
+      STATUS: "P",
+      assunto: "",
+      mensagem: $("#mensagem").val(),
+      mensagem_professor: "",
+      id_treinador:id_treinador
     },
     datatype: "json",
     success: function (data) {
@@ -42,8 +45,10 @@ function setFedback() {
       return true;
     },
     error: function (xhr, status, error) {
-      alert("Erro ao conectar com o servidor. Por favor tente novamente mais tarde.");
+      alert(
+        "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+      );
       console.log(xhr, status, error);
-    }
+    },
   });
 }

@@ -47,15 +47,34 @@ function monta_tabela_principal_trainner() {
       var html_tabela_principal = "";
       data.forEach(value => {
         if (value.id_treinador == id) {
-          html_tabela_principal = `<tr>
+          var href = "";
+          var div = "";
+          if(value.TP_INFORMACAO == 1){
+              href = "Retorno_Dúvidas";
+              div = "Dúvidas";
+          }else{
+            div = "Feedback";
+            href = "retorno_feedback";
+          }
+
+          var status = "";
+          var color = "";
+          if(value.STATUS == 'P'){
+            color = "orange";
+            status = "Pendente"
+          }else{
+            color = "#54cf80";
+            status = "Concluído";
+          }
+          html_tabela_principal += `<tr>
                                     <td>
                                       <h5 class="text-bold">` + value.NOME_ALUNO + `</h5>
                                     </td>
                                     <td>
-                                      <a href="../` + (value.TP_INFORMAÇAO == 1 ? "Retorno_Dúvidas" : "retorno_feedback") + `/index.html?nome=` + value.NOME_ALUNO + `&id=` + id + `"><h5 class="text-bold">` + (value.TP_INFORMAÇAO == 1 ? "Dúvidas" : "Feedback") + `</h5></a>
+                                      <a href="../` + href + `/index.html?nome=` + value.NOME_ALUNO + `&id=` + id + `&text=`+value.mensagem.replace(' ', "")+`&assunto=`+value.assunto.replace(' ', "")+`"><h5 class="text-bold">` + div + `</h5></a>
                                     </td>
                                     <td>
-                                      <h5 class="text-bold" style="color: #54cf80">` + (value.STATUS == 'P' ? "Pendente" : "Concluído") + `</h5>
+                                      <h5 class="text-bold" style="color: `+color+`">` + status + `</h5>
                                     </td>
                                 </tr>`;
         }
