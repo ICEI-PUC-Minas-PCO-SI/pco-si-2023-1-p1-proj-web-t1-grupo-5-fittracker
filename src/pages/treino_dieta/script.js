@@ -54,20 +54,21 @@ $.ajax({
   url: `http://localhost:3000/tipo_informacao`,
   success: function (data) {
     var valores_position = [];
-    var html_informacoes_feedback
+    var html_informacoes_feedback = ''
     data.forEach(value => {
       console.log('value: ', value);
 
-      if (value.ID_ALUNO == id) {
+      if (value.ID_ALUNO == id && value.STATUS == "C") {
         valores_position.push(value);
       }
     });
-    console.log("ID", id);
     console.log('valores_position: ', valores_position);
 
     valores_position.forEach(value => {
-      html_informacoes_feedback += `<a href="../retorno_feedback/index.html?id=` + value.id + `">
-      <p class="text-bold" style=" padding-top: 5%; padding-left: 10%;"><p1>` + value.descricao + `</p1></p>
+      html_informacoes_feedback += `<a href="../retorno_aluno_feedback/index.html?id_retorno=` + value.id + `">
+      ${
+        value.TP_INFORMACAO == "1" ? 'Retorno dúvida' : 'Retorno feedback'
+      }<br>
   </a>`;
     });
     $("#informacoes_novas").html(html_informacoes_feedback);

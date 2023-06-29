@@ -94,6 +94,8 @@
   const nome = urlParams.get("nome");
   const text = urlParams.get("text");
   const id_informacao = urlParams.get("id_informacao");
+  const id_aluno = urlParams.get("id_aluno");
+
 
   $(document).ready(function () {
     $("#nome_aluno").html("Aluno: " + nome);
@@ -160,7 +162,7 @@
       url: `http://localhost:3000/tipo_informacao/${id_informacao}`,
       data: {
         NOME_ALUNO: nome,
-        ID_ALUNO: id,
+        ID_ALUNO: id_aluno,
         TP_INFORMACAO: 2,
         STATUS: "C",
         assunto: null,
