@@ -1,0 +1,32 @@
+ATA - Reunião de Desenvolvimento - [Data da Reunião]
+## Informações Gerais
+
+
+## Participantes:
+- **João Paulo**
+- **Matheus Duarte**
+- **Rodrigo Mota**
+- **Matheus Amaral**
+
+Atividades Realizadas
+João Paulo
+Fez a tela de login, mantendo a responsividade.
+Criou o layout padrão a ser utilizado nas diversas telas do sistema.
+Realizou os links entre as páginas e ajustes necessários nas telas em geral.
+Responsável pela criação da tela de cadastro.
+
+Matheus Duarte
+Utilizou HTML e CSS para realizar as telas 3, 4 e 5.
+Tela 3 (treino_dieta): Criou os campos de treino e dieta para o aluno, além de opções de redirecionamento.
+Tela 4 (treino_dieta_professor): Permite que o professor atualize as fichas de treino e detalhes da dieta do aluno.
+Tela 5 (feedback_semanal): Permite que o aluno envie o feedback semanal sobre treino e dieta, seguindo as orientações do professor.
+
+Rodrigo Mota
+Fez a tela 2 (tela do usuário treinador) principal.
+Criou a tela 8 (retorno do feedback do aluno para o treinador).
+Corrigiu problemas de responsividade nas telas do sistema.
+
+Matheus Amaral
+Utilizou HTML e CSS para criar as telas de Dúvidas_Aluno e Retorno_Dúvidas.
+Tela Dúvidas_Aluno: Permite que o aluno envie suas dúvidas para o professor.
+Tela Retorno_Dúvidas: Permite que o professor acesse as dúvidas dos alunos e as responda.
