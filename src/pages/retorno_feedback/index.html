@@ -129,15 +129,18 @@
     });
   }
 
+  let id_informacao;
+
   function getFedback() {
+
     $.ajax({
       method: "GET",
       url: `http://localhost:3000/tipo_informacao`,
       success: function (data) {
         data.forEach((value) => {
-          console.log(value);
           if (String(nome) == value.NOME_ALUNO && value.TP_INFORMACAO == 2) {
             $("#menssagem_aluno").html(text);
+            id_informacao = value.id;
           }
         });
         return true;
@@ -151,16 +154,19 @@
     });
   }
 
+
   function setFedback() {
     $.ajax({
-      method: "POST",
-      url: `http://localhost:3000/tipo_informacao`,
+      method: "PUT",
+      url: `http://localhost:3000/tipo_informacao/${id_informacao}`,
       data: {
         NOME_ALUNO: nome,
+        TP_INFORMACAO: 2,
         STATUS: "C",
         assunto: null,
-        mensagem: $("#assunto").html(),
+        mensagem: $("#menssagem_aluno").html(),
         mensagem_professor: $("#retorno_feedback").text(),
+        id_treinador: id,
       },
       datatype: "json",
       success: function (data) {
