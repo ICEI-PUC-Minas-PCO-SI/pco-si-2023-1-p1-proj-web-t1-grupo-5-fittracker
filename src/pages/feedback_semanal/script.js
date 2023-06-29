@@ -37,8 +37,8 @@ function setFedback() {
     },
     datatype: "json",
     success: function (data) {
+      window.location.href = `../treino_dieta/index.html?id=${id}`;
       alert("Feedback enviado com sucesso.");
-      window.location.href = `../Principal_trainner/index.html?id=${id}`;
       return true;
     },
     error: function (xhr, status, error) {
