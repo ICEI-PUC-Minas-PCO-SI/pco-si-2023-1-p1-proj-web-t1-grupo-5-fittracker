@@ -56,10 +56,15 @@ $.ajax({
     var valores_position = [];
     var html_informacoes_feedback
     data.forEach(value => {
-      if (value.id_aluno == id) {
+      console.log('value: ', value);
+
+      if (value.ID_ALUNO == id) {
         valores_position.push(value);
       }
     });
+    console.log("ID", id);
+    console.log('valores_position: ', valores_position);
+
     valores_position.forEach(value => {
       html_informacoes_feedback += `<a href="../retorno_feedback/index.html?id=` + value.id + `">
       <p class="text-bold" style=" padding-top: 5%; padding-left: 10%;"><p1>` + value.descricao + `</p1></p>

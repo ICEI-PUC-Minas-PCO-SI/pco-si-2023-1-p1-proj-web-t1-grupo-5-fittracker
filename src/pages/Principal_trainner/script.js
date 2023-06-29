@@ -47,22 +47,26 @@ function monta_tabela_principal_trainner() {
       var html_tabela_principal = "";
       data.forEach(value => {
         if (value.id_treinador == id) {
-          var href = "";
+          var href1 = "";
           var div = "";
-          if(value.TP_INFORMACAO == 1){
-              href = "Retorno_Dúvidas";
-              div = "Dúvidas";
-          }else{
+          if (value.TP_INFORMACAO == 1) {
+            href1 = "Retorno_Dúvidas";
+            div = "Dúvidas";
+          } else {
             div = "Feedback";
-            href = "retorno_feedback";
+            href1 = "retorno_feedback";
           }
 
           var status = "";
           var color = "";
-          if(value.STATUS == 'P'){
+          var href = "";
+          if (value.STATUS == 'P') {
             color = "orange";
             status = "Pendente"
-          }else{
+            console.log(value);
+            href = `href=../${href1}/index.html?nome=${value.NOME_ALUNO }&id_aluno=${value.ID_ALUNO}&id=${id}&text=${value.mensagem.replace(' ', "") }&assunto=${value.assunto.replace(' ', "")}&id_informacao=${value.id}`
+          } else {
+            href = ''
             color = "#54cf80";
             status = "Concluído";
           }
@@ -71,10 +75,10 @@ function monta_tabela_principal_trainner() {
                                       <h5 class="text-bold">` + value.NOME_ALUNO + `</h5>
                                     </td>
                                     <td>
-                                      <a href="../` + href + `/index.html?nome=` + value.NOME_ALUNO + `&id=` + id + `&text=`+value.mensagem.replace(' ', "")+`&assunto=`+value.assunto.replace(' ', "")+`"><h5 class="text-bold">` + div + `</h5></a>
+                                      <a  ${href} ><h5 class="text-bold">` + div + `</h5></a>
                                     </td>
                                     <td>
-                                      <h5 class="text-bold" style="color: `+color+`">` + status + `</h5>
+                                      <h5 class="text-bold" style="color: ` + color + `">` + status + `</h5>
                                     </td>
                                 </tr>`;
         }

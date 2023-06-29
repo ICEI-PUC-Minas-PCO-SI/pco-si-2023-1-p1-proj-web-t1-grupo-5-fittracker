@@ -31,12 +31,13 @@ function setFedback() {
     url: `http://localhost:3000/tipo_informacao`,
     data: {
       NOME_ALUNO: NOME_ALUNO,
+      ID_ALUNO: id,
       TP_INFORMACAO: 2,
       STATUS: "P",
       assunto: "",
       mensagem: $("#mensagem").val(),
       mensagem_professor: "",
-      id_treinador:id_treinador
+      id_treinador: id_treinador
     },
     datatype: "json",
     success: function (data) {

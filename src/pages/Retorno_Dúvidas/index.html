@@ -83,6 +83,7 @@
   const id = urlParams.get("id");
   const nome = urlParams.get("nome");
   const assunto = urlParams.get("assunto");
+  const id_informacao = urlParams.get("id_informacao");
 
   $(document).ready(function () {
     $("#nome_aluno").html("Aluno: " + nome);
@@ -121,7 +122,6 @@
       },
     });
   }
-  var id_informacao = 0
 
   async function getDuvida() {
     $.ajax({
@@ -129,9 +129,8 @@
       url: `http://localhost:3000/tipo_informacao`,
       success: function (data) {
         data.forEach((value) => {
-          if (String(nome) == value.NOME_ALUNO && value.TP_INFORMACAO == 1) {
+          if (id_informacao == value.id && value.TP_INFORMACAO == 1) {
             // $("#resposta").val(value.mensagem);
-            id_informacao = value.id
             console.log('value.id: ', value.id);
             console.log('value: ', value);
             $("#assunto").html(assunto);
@@ -151,23 +150,11 @@
 
   function setDuvida() {
     $.ajax({
-      method: "DELETE",
+      method: "PUT",
       url: `http://localhost:3000/tipo_informacao/${id_informacao}`,
-      success: function (data) {
-        return true;
-      },
-      error: function (xhr, status, error) {
-        alert(
-          "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
-        );
-        console.log(xhr, status, error);
-      },
-    });
-    $.ajax({
-      method: "POST",
-      url: `http://localhost:3000/tipo_informacao`,
       data: {
         NOME_ALUNO: nome,
+        ID_ALUNO: nome,
         TP_INFORMACAO: 1,
         STATUS: "C",
         assunto: $("#assunto").val(),
@@ -175,7 +162,6 @@
         mensagem_professor: $("#resposta").val(),
         id_treinador: id
       },
-      datatype: "json",
       success: function (data) {
         window.location.href = `../Principal_trainner/index.html?id=${id}`;
         alert("Retorno enviado com sucesso.");
@@ -188,5 +174,6 @@
         console.log(xhr, status, error);
       },
     });
+
   }
 </script>

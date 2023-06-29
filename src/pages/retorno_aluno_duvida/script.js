@@ -26,6 +26,7 @@ function setFedback() {
     url: `http://localhost:3000/tipo_informacao`,
     data: {
       NOME_ALUNO: nome,
+      ID_ALUNO: id,
       STATUS: 'P',
       assunto: null,
       mensagem: $("#mensagem").text(),
