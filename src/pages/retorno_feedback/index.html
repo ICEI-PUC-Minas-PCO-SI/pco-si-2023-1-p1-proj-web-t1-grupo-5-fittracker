@@ -1,110 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-    <title>Fit Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
 
-    <!-- Link Css -->
-    <link rel="stylesheet" href="../../DefaultLayout.css" />
-    <!-- Link Css Global -->
-    <link rel="stylesheet" href="../../styles/global.css" />
-  </head>
-  <header>
-    <div class="item_header">
-      <img src="../../assets/logo.svg" alt="Logo" />
-    </div>
-    <div class="item_header" id="boas_vindas">
-      <h2>Seja bem vindo, usuário!</h2>
-    </div>
-    <div class="item_header" id="duvidas_conta_logout">
-      <a href="../Principal_trainner/index.html">Home</a>
-      <a href="../login/index.html"> Sair</a>
-    </div>
-  </header>
+  <title>Fit Tracker</title>
 
-  <body>
-    <main class="row" style="background-color: #ffffff">
-      <h2 style="text-align: center">
-        <b>Aluno: Marcos Cardoso</b>
-      </h2>
+  <!-- Link Css -->
+  <link rel="stylesheet" href="../../DefaultLayout.css" />
+  <!-- Link Css Global -->
+  <link rel="stylesheet" href="../../styles/global.css" />
+</head>
+<header>
+  <div class="item_header">
+    <img src="../../assets/logo.svg" alt="Logo" />
+  </div>
+  <div class="item_header" id="boas_vindas">
+    <h2 id="header_treinador"></h2>
+  </div>
+  <div class="item_header" id="duvidas_conta_logout">
+    <a href="../Principal_trainner/index.html">Home</a>
+    <a href="../login/index.html"> Sair</a>
+  </div>
+</header>
+
+<body>
+  <main class="row" style="background-color: #ffffff">
+    <h2 style="text-align: center">
+      <b id="nome_aluno"></b>
+    </h2>
+    <div class="row">
       <div class="row">
-        <div class="row">
-          <h4 style="text-align: left; margin-top: -11%; margin-left: 3%">
-            <b>Feedback Semanal</b>
-          </h4>
-          <h5 style="text-align: left; margin-top: -12%; margin-left: 3%">
-            Essa semana consegui ir na academia 3 vezez. Estou feliz com meu
-            progresso!
-          </h5>
-        </div>
-        <div class="row">
-          <h4 style="text-align: left; margin-top: -11%; margin-left: 3%">
-            <b>Retorno Feedback Semanal</b>
-          </h4>
-          <h5 style="text-align: left; margin-top: -12%; margin-left: 3%">
-            <p
-              name=""
-              id=""
-              cols="102"
-              rows="8"
-              style="max-width: 80%; padding: 10px 10px"
-            >
-              Caro Marcos Cardoso, Agradecemos por compartilhar seu feedback
-              semanal sobre seu progresso na academia.É ótimo ver seu empenho
-              contínuo e seu compromisso com seus objetivos de condicionamento
-              físico. Valorizamos sua dedicação e estamos aqui para apoiá-lo em
-              sua jornada.
-            </p>
-          </h5>
+        <h4 style="text-align: left; margin-top: -11%; margin-left: 3%">
+          <b>Feedback Semanal</b>
+        </h4>
+        <h5 id="menssagem_aluno" style="text-align: left; margin-top: -12%; margin-left: 3%"></h5>
+      </div>
+      <div class="row">
+        <h4 style="text-align: left; margin-top: -12%; margin-left: 3%">
+          <b>Retorno Feedback Semanal</b>
+        </h4>
+        <h5 style="text-align: left; margin-top: -12%; margin-left: 3%">
+          <textarea name="" id="retorno_feedback" cols="102" rows="8"
+            style="max-width: 80%; padding: 10px 10px"></textarea>
+        </h5>
+        <p id="texto_feedback"></p>
+        <div class="button" style="justify-content: flex-end; display: flex">
+          <button onclick="setFedback()" type="button" class="btn btn-lg rounded-pill" style="
+                padding: 0 30px;
+                background-color: rgb(50, 217, 50);
+                color: white;
+                border: 0;
+                border-radius: 210px;
+                margin: 0 20px 10px;
+              ">
+            Salvar
+          </button>
         </div>
       </div>
-    </main>
-    <div class="button" style="justify-content: flex-end; display: flex">
-      <button
-        type="button"
-        class="btn btn-lg rounded-pill"
-        style="
-          padding: 10px 30px;
-          background-color: rgb(50, 217, 50);
-          color: white;
-          border: 0;
-          border-radius: 210px;
-          margin: 0 20px 10px;
-        "
-      >
-        Salvar
-      </button>
     </div>
-  </body>
-  <footer>
-    <div class="information_footer">
-      <b>Sobre nós</b>
-      <a href="../QuemSomosPage/index.html">Quem somos?</a>
-    </div>
-    <div class="information_footer">
-      <b>Contatos</b>
-      <a>fittracker@gmail.com</a>
-      <a>(31)99145-6032</a>
-    </div>
-    <div id="div_redes_sociais">
-      <p><b>Nossas redes sociais</b></p>
-      <a><i class="bi bi-facebook"></i> </a>
-      <a><i class="bi bi-twitter"></i> </a>
-      <a><i class="bi bi-instagram"></i> </a>
-    </div>
-  </footer>
+  </main>
+</body>
+<footer>
+  <div class="information_footer">
+    <b>Sobre nós</b>
+    <a href="../QuemSomosPage/index.html">Quem somos?</a>
+  </div>
+  <div class="information_footer">
+    <b>Contatos</b>
+    <a>fittracker@gmail.com</a>
+    <a>(31)99145-6032</a>
+  </div>
+  <div id="div_redes_sociais">
+    <p><b>Nossas redes sociais</b></p>
+    <a><i class="bi bi-facebook"></i> </a>
+    <a><i class="bi bi-twitter"></i> </a>
+    <a><i class="bi bi-instagram"></i> </a>
+  </div>
+</footer>
+
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="jquery-3.6.4.min.js"></script>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get("id");
+  const nome = urlParams.get("nome");
+  const text = urlParams.get("text");
+
+  $(document).ready(function () {
+    $("#nome_aluno").html("Aluno: " + nome);
+    alunos_professor();
+    getFedback();
+  });
+
+  var get_aluno = [];
+  var get_aluno2 = [];
+
+  function alunos_professor() {
+    $.ajax({
+      method: "GET",
+      url: `http://localhost:3000/usuarios`,
+      success: function (data) {
+        data.forEach((value) => {
+          if (value.codigo_treinador == null && value.id == id) {
+            $("#header_treinador").html(
+              "Seja bem vindo, Treinador(a) " + value.nome
+            );
+          }
+          if (value.codigo_treinador != null && value.codigo_treinador == id) {
+            get_aluno.push(value);
+          }
+        });
+        return true;
+      },
+      error: function (xhr, status, error) {
+        alert(
+          "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+        );
+        console.log(xhr, status, error);
+      },
+    });
+  }
+
+  function getFedback() {
+    $.ajax({
+      method: "GET",
+      url: `http://localhost:3000/tipo_informacao`,
+      success: function (data) {
+        data.forEach((value) => {
+          console.log(value);
+          if (String(nome) == value.NOME_ALUNO && value.TP_INFORMACAO == 2) {
+            $("#menssagem_aluno").html(text);
+          }
+        });
+        return true;
+      },
+      error: function (xhr, status, error) {
+        alert(
+          "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+        );
+        console.log(xhr, status, error);
+      },
+    });
+  }
+
+  function setFedback() {
+    $.ajax({
+      method: "POST",
+      url: `http://localhost:3000/tipo_informacao`,
+      data: {
+        NOME_ALUNO: nome,
+        STATUS: "C",
+        assunto: null,
+        mensagem: $("#assunto").html(),
+        mensagem_professor: $("#retorno_feedback").text(),
+      },
+      datatype: "json",
+      success: function (data) {
+        window.location.href = `../Principal_trainner/index.html?id=${id}`;
+        alert("Retorno enviado com sucesso.");
+        return true;
+      },
+      error: function (xhr, status, error) {
+        alert(
+          "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+        );
+        console.log(xhr, status, error);
+      },
+    });
+  }
+</script>

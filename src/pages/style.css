@@ -25,11 +25,6 @@ header img{
     align-items:center;
     
 }
-#boas_vindas{
-    display:flex;
-    align-items:center;
-    
-}
 #duvidas_conta_logout{
     display:flex;
     flex-direction:column;
@@ -43,7 +38,9 @@ footer{
     padding: 20px 100PX;
     justify-content:space-between;
     background:#F2F2F2;
-    margin-top: 50px;
+}
+main{
+    height:500px;
 }
 footer a{
     display:block;
@@ -73,9 +70,4 @@ footer p{
     header h2{
         margin-bottom:8px;
     }
-}
-
-main {
-    margin-top: 3%;
-    height: 500px;
 }

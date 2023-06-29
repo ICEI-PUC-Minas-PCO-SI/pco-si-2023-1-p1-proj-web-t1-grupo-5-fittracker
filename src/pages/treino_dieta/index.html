@@ -1,116 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
 
-    <title>Fit Tracker</title>
-    <!-- Link Css -->
-    <link rel="stylesheet" href="./styles.css" />
-    <!-- Link Css Global -->
-    <link rel="stylesheet" href="../../styles/global.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-  <body>
-    <header>
-      <div class="item_header">
-        <img src="../../assets/logo.svg" alt="Logo" />
-      </div>
-      <div class="item_header" id="boas_vindas">
-        <h2>Seja bem vindo, usuário!</h2>
-      </div>
-      <div class="item_header" id="duvidas_conta_logout">
-        <a>Home</a>
-        <a href="../login/index.html"> Sair</a>
-      </div>
-    </header>
-    <main>
-      <h3 style="text-align: center; margin-top: 10px; margin-bottom: 6px">
-        Treino e Dieta
-      </h3>
-      <div class="menu-container">
-        <div class="menu">
-          <h3>Treino</h3>
-          <strong><p style="margin-top: 12px">Segunda-Feira</p></strong>
-          <p style="margin-top: 5px">Peito/Ombro/Tríceps</p>
+  <title>Fit Tracker</title>
+  <!-- Link Css -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Link Css Global -->
+  <link rel="stylesheet" href="../../styles/global.css" />
+</head>
 
-          <strong><p style="margin-top: 12px">Quarta-Feira</p></strong>
-          <p style="margin-top: 5px">Costas/Bíceps/Trapézio</p>
-
-          <strong><p style="margin-top: 12px">Sexta-Feira</p></strong>
-          <p style="margin-top: 5px">Quadríceps/Posterior/Panturrilha</p>
-        </div>
-
-        <div class="divisoria"></div>
-
-        <div class="menu">
-          <h3>Dieta</h3>
-          <strong><p style="margin-top: 12px">Proteínas</p></strong>
-          <p style="margin-top: 5px">150g</p>
-
-          <strong><p style="margin-top: 12px">Carboidratos</p></strong>
-          <p style="margin-top: 5px">323g</p>
-
-          <strong><p style="margin-top: 12px">Gorduras</p></strong>
-          <p style="margin-top: 5px">59g</p>
-        </div>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="jquery-3.6.4.min.js"></script>
+  <header>
+    <div class="item_header">
+      <img src="../../assets/logo.svg" alt="Logo" />
+    </div>
+    <div class="item_header" id="boas_vindas">
+      <h2 id="bem_vindo">Seja bem vindo, usuário!</h2>
+    </div>
+    <div class="item_header" id="duvidas_conta_logout">
+      <a>Home</a>
+      <a href="../login/index.html"> Sair</a>
+    </div>
+  </header>
+  <main>
+    <h3 style="text-align: center; margin-top: 10px; margin-bottom: 6px">
+      Treino e Dieta
+    </h3>
+    <div class="menu-container">
+      <div class="menu">
+        <h3>Treino</h3>
+        <p id="treino" style="margin-top: 12px"></p>
       </div>
 
-      <div class="container" style="margin-top: 20px">
-        <div class="box">
-          <h3>Retorno e Informações</h3>
-          <div class="flex-container">
-            <div class="subtitle">
-              <h4 style="margin-top: 5px">Informação/dicas/Feedbacks</h4>
-              <a href="../retorno_feedback/index.html"
-                ><p>Resposta Feedback semanal</p></a
-              >
-            </div>
-            <div class="subtitle">
-              <h4 style="margin-top: 5px">Data</h4>
-              <p>04/05/2023</p>
-            </div>
+      <div class="divisoria"></div>
+
+      <div class="menu">
+        <h3>Dieta</h3>
+        <p id="dieta" style="margin-top: 12px"></p>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 20px">
+      <div class="box">
+        <div class="flex-container">
+          <div class="subtitle">
+            <h3 style="margin-top: 5px">Informações/dicas/Feedbacks</h3>
+            <div id="informacoes_novas"> </div>
+            <!-- <a href="../retorno_feedback/index.html">
+              <p>Resposta Feedback semanal</p>
+            </a> -->
+            <a href="../retorno_feedback/index.html">
+              <p id="assunto"></p>
+            </a>
           </div>
+
         </div>
       </div>
+    </div>
 
-      <div class="container" style="margin-top: 20px">
-        <div class="box2">
-          <h3>Envios</h3>
-          <a href="../feedback_semanal/index.html">
-            <p style="margin-top: 15px">Enviar feedback semanal</p></a
-          >
-          <a href="../Dúvidas_Aluno/index.html"
-            ><p style="margin-top: 15px">Dúvidas</p></a
-          >
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="information_footer">
-        <p><b>Sobre nós</b></p>
-        <a href="../QuemSomosPage/index.html">Quem somos?</a>
-      </div>
-      <div class="information_footer">
-        <p><b>Contatos</b></p>
-        <a>fittracker@gmail.com</a>
-        <a>(31)99145-6032</a>
-      </div>
-      <div id="div_redes_sociais">
-        <p><b>Nossas redes sociais</b></p>
-        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i> </a>
-        <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i> </a>
-        <a href="https://www.instagram.com/"
-          ><i class="bi bi-instagram"></i>
+    <div class="container" style="margin-top: 20px">
+      <div class="box2">
+        <h3>Envios</h3>
+        <a id="enviar_feedback">
+          <p style="margin-top: 15px">Enviar feedback semanal</p>
+        </a>
+        <a id="enviar_duvida">
+          <p style="margin-top: 15px">Dúvidas</p>
         </a>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+    </div>
+  </main>
+
+  <footer>
+    <div class="information_footer">
+      <p><b>Sobre nós</b></p>
+      <a href="../QuemSomosPage/index.html">Quem somos?</a>
+    </div>
+    <div class="information_footer">
+      <p><b>Contatos</b></p>
+      <a>fittracker@gmail.com</a>
+      <a>(31)99145-6032</a>
+    </div>
+    <div id="div_redes_sociais">
+      <p><b>Nossas redes sociais</b></p>
+      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i> </a>
+      <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i> </a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="../Retorno_Dúvidas/script.js"></script>
+  <script>
+    // Obter valores do localStorage
+    var assunto = localStorage.getItem("assunto");
+    var mensagem = localStorage.getItem("mensagem");
+
+    // Preencher elementos HTML com os valores
+    document.getElementById("assunto").innerText = assunto;
+    document.getElementById("mensagem").innerText = mensagem;
+  </script>
+</body>
+
 </html>
