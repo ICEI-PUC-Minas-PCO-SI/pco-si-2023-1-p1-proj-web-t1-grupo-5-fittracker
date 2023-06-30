@@ -9,25 +9,56 @@
 
   <title>Fit Tracker</title>
   <!-- Link Css -->
-  <link rel="stylesheet" href="./DefaultLayout.css" />
+  <link rel="stylesheet" href="./styles.css" />
   <!-- Link Css Global -->
   <link rel="stylesheet" href="./styles/global.css" />
 </head>
 
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="jquery-3.6.4.min.js"></script>
   <header>
     <div class="item_header">
       <a href="./index.html"><img id="img_logo" src="./assets/logo.svg" alt="Logo" /></a>
     </div>
     <div class="item_header" id="boas_vindas">
-      <h2>Seja bem vindo, usuário!</h2>
+      <h2 id="header_treinador">Seja bem vindo, treinador!</h2>
     </div>
     <div class="item_header" id="duvidas_conta_logout">
-      <a>Home</a>
+      <a href="./Principal_trainner.html">Home</a>
       <a href="./index.html"> Sair</a>
     </div>
   </header>
-  <main></main>
+
+  <main>
+    <h3 style="text-align: center" id="nome_aluno"></h3>
+    <div class="row" style="margin-top: 30px; margin-left: 5%">
+      <h4>Treino</h4>
+      <textarea name="" id="treino" cols="180" rows="10"
+        style="max-width: 80%; padding: 10px 10px; margin-top: 10px"></textarea>
+    </div>
+
+    <div class="row" style="margin-top: 30px; margin-left: 5%">
+      <h4>Dieta</h4>
+      <h5 style="text-align: left">
+        <textarea name="" id="dieta" cols="180" rows="10"
+          style="max-width: 80%; padding: 10px 10px; margin-top: 10px"></textarea>
+      </h5>
+    </div>
+
+    <div class="button" style="justify-content: flex-end; display: flex">
+      <button onclick="salvarDados()" type="button" class="btn btn-lg rounded-pill" style="
+            padding: 10px 30px;
+            background-color: rgb(50, 217, 50);
+            color: white;
+            border: 0;
+            border-radius: 210px;
+            margin: -20px 20px;
+          ">
+        Salvar
+      </button>
+    </div>
+  </main>
   <footer>
     <div class="information_footer">
       <p><b>Sobre nós</b></p>
@@ -46,7 +77,7 @@
       </a>
     </div>
   </footer>
-  <script src="./script.js"></script>
+  <script src="./treino_dieta_professor.js"></script>
 </body>
 
 </html>
