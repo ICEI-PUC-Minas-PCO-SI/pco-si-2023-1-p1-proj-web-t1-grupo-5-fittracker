@@ -1,3 +1,26 @@
+window.onload = () => {
+    fetch(`http://localhost:3000/usuarios`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }).then((res => {
+        return res.json()
+    })).then((res) => {
+        let treinadoresOptions = `<option value="">Selecione um treinador</option>`
+        let selectTreinador = document.getElementById("codigo_treinador");
+        var option;
+        option = new Option("Selecione um treinador", "")
+        selectTreinador.add(option)
+        res.map((usuar) => {
+            if (usuar.codigo_treinador == null) {
+                option = new Option(usuar.nome, usuar.id)
+                selectTreinador.add(option)
+            }
+        })
+    })
+}
+
 document.getElementById("isAluno").addEventListener("change", function (event) {
     if (document.getElementById("isAluno").value == '0') {
         document.getElementById("codigo_treinador").style.display = "none";
@@ -14,9 +37,21 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
     var isAluno = document.getElementById("isAluno").value == 1 ? true : false;
     var codigo_treinador = document.getElementById("codigo_treinador").value;
 
-    if (!nome || !login || !senha || (isAluno && !codigo_treinador)) {
-        alert("Por favor, preencha todos os campos.");
+    if (!nome) {
+        alert("Por favor, preencha o campo nome.");
         return;
+    }
+    if (!login) {
+        alert("Por favor, preencha o campo login.");
+        return;
+    }
+    if (!login) {
+        alert("Por favor, preencha o campo senha.");
+        return;
+    }
+    if (isAluno && !codigo_treinador) {
+        alert("Por favor, selecione um treinador.");
+
     }
     if (nome.length < 6) {
         alert("O nome deve ter pelo menos 6 caracteres.");
