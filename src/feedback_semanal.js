@@ -53,3 +53,7 @@ function setFedback() {
     },
   });
 }
+
+document.getElementById("hom").addEventListener("click", async function (event) {
+  window.location.href = `./treino_dieta.html?id=${id}`;
+})

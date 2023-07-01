@@ -3,7 +3,6 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 console.log('id: ', id);
 const id_professor = urlParams.get("id_treinador");
-console.log('id_professor: ', id_professor);
 
 $.ajax({
   method: "GET",
@@ -83,3 +82,6 @@ function salvarDados() {
     }
   });
 }
+document.getElementById("hom").addEventListener("click", async function (event) {
+  window.location.href = `./Principal_trainner.html?id=${id_professor}`;
+})

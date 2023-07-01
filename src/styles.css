@@ -10,7 +10,7 @@
   -moz-background-size: cover;
   background-size: cover;
 }
-#div_login button:hover {
+.div_login button:hover {
   background-color: var(--yellow900);
   color: white;
 }
@@ -73,12 +73,12 @@ main {
   max-width: 50%;
   padding-left: 110px;
 }
-#div_login {
+.div_login {
   display: flex;
   flex-direction: column;
   background: var(--light-gray);
   width: 23%;
-  height: 433px;
+  height: 450px;
   border-radius: 47px;
   min-width: 240px;
   min-height: 400;
@@ -87,11 +87,18 @@ main {
   justify-content: center;
   gap: 20px;
 }
+.info_login {
+  font-size: 1rem;
+}
 
-#div_login h1 {
+.info_login a {
+  color: var(--yellow900);
+}
+
+.div_login h1 {
   color: var(--yellow800);
 }
-#div_login input {
+.div_login input {
   border: 0;
   display: block;
   width: 100%;
@@ -101,7 +108,7 @@ main {
   outline: none;
   opacity: 0.5;
 }
-#div_login input:focus {
+.div_login input:focus {
   border: 3px solid var(--yellow900);
   align-items: center;
   display: flex;
@@ -129,12 +136,15 @@ select {
   box-shadow: 0px 2px 6px var(--yellow900);
   text-align: center;
 }
-#div_login button:hover {
+.div_login button:hover {
   background-color: var(--yellow900);
   color: white;
 }
+header h2 {
+  margin-right: 200px;
+}
 
-#div_login h1 {
+.div_login h1 {
   padding-bottom: 20px;
   font-weight: 700;
 }
@@ -178,7 +188,7 @@ footer p {
 }
 
 @media (max-width: 1330px) {
-  #div_login p {
+  .div_login p {
     font-size: 0.8rem;
   }
 }
@@ -199,7 +209,6 @@ footer p {
 }
 @media (max-width: 750px) {
   footer {
-    margin-top: 232px;
   }
 }
 @media (max-width: 522px) {

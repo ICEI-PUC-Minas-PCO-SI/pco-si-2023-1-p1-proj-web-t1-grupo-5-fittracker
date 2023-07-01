@@ -15,9 +15,7 @@
 </head>
 
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="jquery-3.6.4.min.js"></script>
-  <script src="./retorno_aluno_duvida.js"></script>
+
   <header>
     <div class="item_header">
       <a href="./index.html"><img id="img_logo" src="./assets/logo.svg" alt="Logo" /></a>
@@ -26,7 +24,7 @@
       <h2 id="bem_vindo">Seja bem vindo, usuário!</h2>
     </div>
     <div class="item_header" id="duvidas_conta_logout">
-      <a href="./Principal_trainner.html">Home</a>
+      <a id="hom">Home</a>
       <a href="./index.html"> Sair</a>
     </div>
   </header>
@@ -61,6 +59,8 @@
       <a><i class="bi bi-instagram"></i></a>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./retorno_aluno_duvida.js"></script>
 </body>
 
 </html>
@@ -115,6 +115,10 @@
 
   footer p {
     margin-top: 20px;
+  }
+
+  #hom {
+    color: white;
   }
 
   .information_footer {

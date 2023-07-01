@@ -18,7 +18,7 @@ function alunos_professor() {
         }
         if (value.codigo_treinador == null && value.id == id) {
           $("#header_treinador").html("Seja bem vindo, Treinador(a) " + value.nome);
-          $("#cod_prof").html(value.id);
+          $("#cod_prof").html(value.nome);
         }
       });
 
@@ -28,7 +28,6 @@ function alunos_professor() {
                                               <h4 class="text-bold" style=" padding-top: 5%; padding-left: 10%;"><p1>` + value.nome + `</p1></h4>
                                           </a>`;
       });
-      console.log(html_alunos_professor);
       $("#alunos_professor").html(html_alunos_professor);
       return true;
     },
@@ -64,7 +63,8 @@ function monta_tabela_principal_trainner() {
             color = "orange";
             status = "Pendente"
             console.log(value);
-            href = `href=./${href1}.html?nome=${value.NOME_ALUNO }&id_aluno=${value.ID_ALUNO}&id=${id}&text=${value.mensagem.replace(' ', "") }&assunto=${value.assunto.replace(' ', "")}&id_informacao=${value.id}`
+            href = `href=./${href1}.html?nome=${value.NOME_ALUNO.replace(' ', "%20")}&id_aluno=${value.ID_ALUNO}&id=${id}&id_informacao=${value.id}`
+
           } else {
             href = ''
             color = "#54cf80";

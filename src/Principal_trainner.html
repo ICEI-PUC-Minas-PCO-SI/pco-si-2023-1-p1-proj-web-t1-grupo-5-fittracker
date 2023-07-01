@@ -23,7 +23,7 @@
 <header>
   <div class="item_header">
     <img id="img_logo" src="./assets/logo.svg" alt="Logo" />
-    <p style="color:white; margin-left: 15px;">Código do professor: <span id="cod_prof"></span></p>
+    <p style="color:white; margin-left: 15px;">Professor: <span id="cod_prof"></span></p>
   </div>
   <div class="item_header" id="boas_vindas">
     <h2 id="header_treinador"></h2>
@@ -36,8 +36,8 @@
 
 <body>
 
-  <main class="container-fluid" style="background-color: #ffffff; height: 65vh; padding: 0">
-    <div class="row" style="height: 100%;">
+  <main style="background-color: #ffffff; padding: 0">
+    <div class="row">
       <div style="background-color: #f2f2f2; padding-left: 15px; overflow-y: auto;" class="col-lg-3"
         id="alunos_professor">
       </div>
@@ -64,27 +64,27 @@
 
       </div>
     </div>
+    <footer>
+      <div class="information_footer">
+        <p><b>Sobre nós</b></p>
+        <a href="./QuemSomosPage.html">Quem somos?</a>
+      </div>
+      <div class="information_footer">
+        <p><b>Contatos</b></p>
+        <a>fittracker@gmail.com</a>
+        <a>(31)99145-6032</a>
+      </div>
+      <div id="div_redes_sociais">
+        <p><b>Nossas redes sociais</b></p>
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i> </a>
+        <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i> </a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </footer>
   </main>
-  <footer>
-    <div class="information_footer">
-      <p><b>Sobre nós</b></p>
-      <a href="./QuemSomosPage.html">Quem somos?</a>
-    </div>
-    <div class="information_footer">
-      <p><b>Contatos</b></p>
-      <a>fittracker@gmail.com</a>
-      <a>(31)99145-6032</a>
-    </div>
-    <div id="div_redes_sociais">
-      <p><b>Nossas redes sociais</b></p>
-      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i> </a>
-      <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i> </a>
-      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i>
-      </a>
-    </div>
-  </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="jquery-3.6.4.min.js"></script>
   <script src="Dúvidas_Aluno.js"></script>
   <script src="./Principal_trainner.js" type="module"></script>
 </body>
@@ -112,5 +112,3 @@
   .scroll-horizontal::-webkit-scrollbar-track {
     background-color: #f2f2f2;
   }
-
-  @media (max-width: 600px) {}

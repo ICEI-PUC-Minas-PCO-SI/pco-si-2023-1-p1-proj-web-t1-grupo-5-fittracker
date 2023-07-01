@@ -16,8 +16,7 @@
 
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="jquery-3.6.4.min.js"></script>
-  <header>
+  "" <header>
     <div class="item_header">
       <a href="./index.html"><img id="img_logo" src="./assets/logo.svg" alt="Logo" /></a>
     </div>
@@ -25,7 +24,7 @@
       <h2 id="header_treinador">Seja bem vindo, treinador!</h2>
     </div>
     <div class="item_header" id="duvidas_conta_logout">
-      <a href="./Principal_trainner.html">Home</a>
+      <a id="hom">Home</a>
       <a href="./index.html"> Sair</a>
     </div>
   </header>
@@ -81,3 +80,92 @@
 </body>
 
 </html>
+<style>
+  /* Importanto variaveis de cores do arquivo global */
+  @import url(././styles/variables.css);
+
+  header {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: center;
+    margin: 0;
+  }
+
+  header img {
+    width: 20vw;
+    min-width: 150px;
+  }
+
+  .item_header {
+    max-width: 33.33%;
+  }
+
+  #boas_vindas {
+    display: flex;
+    align-items: center;
+  }
+
+  #boas_vindas {
+    display: flex;
+    align-items: center;
+  }
+
+  #duvidas_conta_logout {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    gap: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    justify-content: space-between;
+    background: #f2f2f2;
+    margin-top: 50px;
+  }
+
+  footer a {
+    display: block;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
+
+  .information_footer {
+    display: inline-block;
+  }
+
+  #div_redes_sociais a {
+    display: inline;
+  }
+
+  #div_redes_sociais i {
+    font-size: 28px;
+  }
+
+  @media (max-width: 500px) {
+    .item_header {
+      min-width: 100%;
+    }
+
+    header {
+      padding: 10px;
+    }
+
+    header h2 {
+      margin-bottom: 8px;
+    }
+  }
+
+  main {
+    margin-top: 3%;
+    height: 500px;
+  }
+</style>

@@ -44,6 +44,9 @@ main {
 footer a {
   display: block;
 }
+#hom {
+  color: white;
+}
 footer p {
   margin-top: 20px;
 }

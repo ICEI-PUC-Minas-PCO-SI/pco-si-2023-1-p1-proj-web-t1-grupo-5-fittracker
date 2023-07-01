@@ -65,7 +65,7 @@ $.ajax({
     console.log('valores_position: ', valores_position);
 
     valores_position.forEach(value => {
-      html_informacoes_feedback += `<a href="./${value.TP_INFORMACAO == "1"?"retorno_aluno_duvida":"retorno_aluno_feedback"}.html?id_retorno=` + value.id + `">
+      html_informacoes_feedback += `<a href="./${value.TP_INFORMACAO == "1"?"retorno_aluno_duvida":"retorno_aluno_feedback"}.html?id_retorno=${value.id}&id=${value.ID_ALUNO}">
       ${
         value.TP_INFORMACAO == "1" ? 'Retorno dúvida' : 'Retorno feedback'
       }<br>
