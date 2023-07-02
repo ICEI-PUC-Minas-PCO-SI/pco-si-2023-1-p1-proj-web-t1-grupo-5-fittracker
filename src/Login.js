@@ -11,7 +11,7 @@ document.getElementById("botaoLogin").addEventListener("click", function (event)
     return;
   }
 
-  fetch(`http://localhost:3000/usuarios?senha=${password}&login=${username}`, {
+  fetch(`https://json-server-fit-tracker.vercel.app/usuarios?senha=${password}&login=${username}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json"

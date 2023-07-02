@@ -3,7 +3,7 @@ const id = urlParams.get("id");
 var id_treinador = 0;
 $.ajax({
   method: "GET",
-  url: `http://localhost:3000/usuarios`,
+  url: `https://json-server-fit-tracker.vercel.app/usuarios`,
   success: function (data) {
     data.forEach(value => {
       if (value.id == id) {
@@ -27,7 +27,7 @@ function carregarDadosTreinoDieta() {
   // Enviar uma requisição GET para obter os dados de treino e dieta do JSON Server
   $.ajax({
     method: "GET",
-    url: "http://localhost:3000/treino_dieta",
+    url: "https://json-server-fit-tracker.vercel.app/treino_dieta",
     success: function (response) {
       response.forEach(value => {
         if (value.id_aluno == id) {
@@ -51,7 +51,7 @@ function carregarDadosTreinoDieta() {
 
 $.ajax({
   method: "GET",
-  url: `http://localhost:3000/tipo_informacao`,
+  url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
   success: function (data) {
     var valores_position = [];
     var html_informacoes_feedback = ''

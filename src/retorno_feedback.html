@@ -108,7 +108,7 @@
   function alunos_professor() {
     $.ajax({
       method: "GET",
-      url: `http://localhost:3000/usuarios`,
+      url: `https://json-server-fit-tracker.vercel.app/usuarios`,
       success: function (data) {
         data.forEach((value) => {
           if (value.codigo_treinador == null && value.id == id) {
@@ -136,7 +136,7 @@
 
     $.ajax({
       method: "GET",
-      url: `http://localhost:3000/tipo_informacao`,
+      url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
       success: function (data) {
         data.forEach((value) => {
           if (id_informacao == value.id && value.TP_INFORMACAO == 2) {
@@ -158,7 +158,7 @@
   function setFedback() {
     $.ajax({
       method: "PUT",
-      url: `http://localhost:3000/tipo_informacao/${id_informacao}`,
+      url: `https://json-server-fit-tracker.vercel.app/tipo_informacao/${id_informacao}`,
       data: {
         NOME_ALUNO: nome,
         ID_ALUNO: id_aluno,

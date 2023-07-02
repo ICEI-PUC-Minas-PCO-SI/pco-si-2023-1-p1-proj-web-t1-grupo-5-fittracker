@@ -6,7 +6,7 @@ const id_professor = urlParams.get("id_treinador");
 
 $.ajax({
   method: "GET",
-  url: `http://localhost:3000/usuarios`,
+  url: `https://json-server-fit-tracker.vercel.app/usuarios`,
   success: function (data) {
     data.forEach(value => {
       if (value.codigo_treinador == null && value.id == id_professor) {
@@ -23,7 +23,7 @@ $.ajax({
 });
 $.ajax({
   method: "GET",
-  url: `http://localhost:3000/usuarios`,
+  url: `https://json-server-fit-tracker.vercel.app/usuarios`,
   success: function (data) {
     data.forEach(value => {
       if (value.id == id) {
@@ -40,7 +40,7 @@ $.ajax({
 });
 $.ajax({
   method: "GET",
-  url: `http://localhost:3000/treino_dieta`,
+  url: `https://json-server-fit-tracker.vercel.app/treino_dieta`,
   success: function (data) {
     data.forEach(value => {
       if (value.id_aluno == id) {
@@ -70,7 +70,7 @@ function salvarDados() {
   // Enviar uma requisição POST para salvar os dados no JSON Server
   $.ajax({
     method: "POST",
-    url: "http://localhost:3000/treino_dieta",
+    url: "https://json-server-fit-tracker.vercel.app/treino_dieta",
     data: data,
     success: function (response) {
       window.location.href = `./Principal_trainner.html?id=${id_professor}`;

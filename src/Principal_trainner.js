@@ -9,7 +9,7 @@ $(document).ready(function () {
 function alunos_professor() {
   $.ajax({
     method: "GET",
-    url: `http://localhost:3000/usuarios`,
+    url: `https://json-server-fit-tracker.vercel.app/usuarios`,
     success: function (data) {
       var valores_position = [];
       data.forEach(value => {
@@ -41,7 +41,7 @@ function alunos_professor() {
 function monta_tabela_principal_trainner() {
   $.ajax({
     method: "GET",
-    url: `http://localhost:3000/tipo_informacao`,
+    url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
     success: function (data) {
       var html_tabela_principal = "";
       data.forEach(value => {

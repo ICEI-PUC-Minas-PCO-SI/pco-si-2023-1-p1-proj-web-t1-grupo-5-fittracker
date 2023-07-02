@@ -1,5 +1,5 @@
 window.onload = () => {
-    fetch(`http://localhost:3000/usuarios`, {
+    fetch(`https://json-server-fit-tracker.vercel.app/usuarios`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -72,7 +72,7 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
         senha: senha,
         codigo_treinador: isAluno ? codigo_treinador : null
     };
-    var jaExisteUsuario = await fetch(`http://localhost:3000/usuarios?login=${login}`, {
+    var jaExisteUsuario = await fetch(`https://json-server-fit-tracker.vercel.app/usuarios?login=${login}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -88,7 +88,7 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
     })
     var idUsuario = 0
     if (!jaExisteUsuario) {
-        criaUsuario = await fetch("http://localhost:3000/usuarios", {
+        criaUsuario = await fetch("https://json-server-fit-tracker.vercel.app/usuarios", {
                 method: "POST",
                 body: JSON.stringify(dados),
                 headers: {
@@ -107,7 +107,7 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
             });
 
         if (criaUsuario) {
-            var usuarioCriado = await fetch(`http://localhost:3000/usuarios?login=${login}`, {
+            var usuarioCriado = await fetch(`https://json-server-fit-tracker.vercel.app/usuarios?login=${login}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"

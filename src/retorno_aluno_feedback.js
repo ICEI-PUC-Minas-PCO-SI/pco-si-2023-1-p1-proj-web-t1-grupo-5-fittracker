@@ -5,7 +5,7 @@ const nome = urlParams.get("nome");
 
 $.ajax({
   method: "GET",
-  url: `http://localhost:3000/tipo_informacao/${id_retorno}`,
+  url: `https://json-server-fit-tracker.vercel.app/tipo_informacao/${id_retorno}`,
 
   datatype: "json",
   success: function (data) {

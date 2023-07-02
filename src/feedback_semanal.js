@@ -6,7 +6,7 @@ const id_treinador = urlParams.get("id_treinador");
 var NOME_ALUNO = "";
 $.ajax({
   method: "GET",
-  url: `http://localhost:3000/usuarios`,
+  url: `https://json-server-fit-tracker.vercel.app/usuarios`,
   success: function (data) {
     data.forEach((value) => {
       if (value.id == id) {
@@ -28,7 +28,7 @@ $.ajax({
 function setFedback() {
   $.ajax({
     method: "POST",
-    url: `http://localhost:3000/tipo_informacao`,
+    url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
     data: {
       NOME_ALUNO: NOME_ALUNO,
       ID_ALUNO: id,

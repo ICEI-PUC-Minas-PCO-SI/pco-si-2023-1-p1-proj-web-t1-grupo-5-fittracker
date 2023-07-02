@@ -90,7 +90,7 @@
   });
 
   var NOME_ALUNO = "";
-  fetch("http://localhost:3000/usuarios", {
+  fetch("https://json-server-fit-tracker.vercel.app/usuarios", {
       method: "GET",
       headers: {
         "Content-Type": "applic ation/json",
@@ -116,7 +116,7 @@
   function getDuvida() {
     $.ajax({
       method: "GET",
-      url: `http://localhost:3000/usuarios`,
+      url: `https://json-server-fit-tracker.vercel.app/usuarios`,
       success: function (data) {
         data.forEach((value) => {
           if (value.codigo_treinador != null && value.id == id) {
@@ -147,7 +147,7 @@
       id_treinador: id_treinador,
     };
 
-    fetch("http://localhost:3000/tipo_informacao", {
+    fetch("https://json-server-fit-tracker.vercel.app/tipo_informacao", {
         method: "POST",
         body: JSON.stringify(dados),
         headers: {
