@@ -59,7 +59,7 @@ footer {
   background: #f2f2f2;
 }
 main {
-  height: 45vw;
+  min-height: 25vw;
 }
 #mainContent {
   display: flex;
