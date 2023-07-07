@@ -4,7 +4,8 @@ const nome = urlParams.get("nome");
 const id_treinador = urlParams.get("id_treinador");
 
 var NOME_ALUNO = "";
-$.ajax({
+
+fetch({
   method: "GET",
   url: `https://json-server-fit-tracker.vercel.app/usuarios`,
   success: function (data) {
@@ -26,31 +27,29 @@ $.ajax({
 });
 
 function setFedback() {
-  $.ajax({
-    method: "POST",
-    url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
-    data: {
-      NOME_ALUNO: NOME_ALUNO,
-      ID_ALUNO: id,
-      TP_INFORMACAO: 2,
-      STATUS: "P",
-      assunto: "",
-      mensagem: $("#mensagem").val(),
-      mensagem_professor: "",
-      id_treinador: id_treinador
-    },
-    datatype: "json",
-    success: function (data) {
-      window.location.href = `./treino_dieta.html?id=${id}`;
-      alert("Feedback enviado com sucesso.");
-      return true;
-    },
-    error: function (xhr, status, error) {
-      alert(
-        "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
-      );
-      console.log(xhr, status, error);
-    },
+     fetch("https://json-server-fit-tracker.vercel.app/tipo_informacao", {
+      method: "POST",
+      body: JSON.stringify({
+        NOME_ALUNO: NOME_ALUNO,
+        ID_ALUNO: id,
+        TP_INFORMACAO: 2,
+        STATUS: "P",
+        assunto: "",
+        mensagem: $("#mensagem").val(),
+        mensagem_professor: "",
+        id_treinador: id_treinador
+      }),
+      headers: {
+          "Content-Type": "application/json"
+      }
+  })
+  .then(function (response) {
+    window.location.href = `./treino_dieta.html?id=${id}`;
+    alert("Feedback enviado com sucesso.");
+    return true;
+  })
+  .catch(function (error) {
+      console.log("erro")
   });
 }
 

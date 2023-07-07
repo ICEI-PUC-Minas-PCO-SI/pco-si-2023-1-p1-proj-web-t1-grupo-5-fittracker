@@ -66,11 +66,13 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
         return;
     }
 
+    var geraID = getRandom(10);
     var dados = {
         nome: nome,
         login: login,
         senha: senha,
-        codigo_treinador: isAluno ? codigo_treinador : null
+        codigo_treinador: isAluno ? codigo_treinador : null,
+        id: geraID
     };
     var jaExisteUsuario = await fetch(`https://json-server-fit-tracker.vercel.app/usuarios?login=${login}`, {
         method: "GET",
@@ -119,9 +121,9 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
             })
         }
         if (isAluno) {
-            window.location.href = `./treino_dieta.html?id=${idUsuario}`;
+            window.location.href = `./treino_dieta.html?id=${geraID}`;
         } else {
-            window.location.href = `./Principal_trainner.html?id=${idUsuario}`;
+            window.location.href = `./Principal_trainner.html?id=${geraID}`;
         }
 
         alert("Usuário cadastrado com sucesso.");
@@ -137,3 +139,9 @@ document.getElementById("botaoCadastro").addEventListener("click", async functio
 
 
 });
+
+    function getRandom(digito) {
+
+        return Math.floor(Math.pow(10, digito - 1) + Math.random() * 9 * Math.pow(10, digito - 1));
+
+    }

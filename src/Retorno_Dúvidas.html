@@ -99,11 +99,15 @@
   var get_aluno2 = [];
 
   function alunos_professor() {
-    $.ajax({
-      method: "GET",
-      url: `https://json-server-fit-tracker.vercel.app/usuarios`,
-      success: function (data) {
-        data.forEach((value) => {
+    fetch(`https://json-server-fit-tracker.vercel.app/usuarios`, {
+  method: "GET",
+  headers: {
+      "Content-Type": "application/json"
+  }
+}).then((res => {
+  return res.json()
+})).then((data) => {
+  data.forEach((value) => {
           if (value.codigo_treinador == null && value.id == id) {
             $("#header_treinador").html(
               "Seja bem vindo, Treinador(a) " + value.nome
@@ -117,44 +121,80 @@
           }
         });
         return true;
-      },
-      error: function (xhr, status, error) {
-        alert(
-          "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
-        );
-        console.log(xhr, status, error);
-      },
-    });
+});
+
+    // $.ajax({
+    //   method: "GET",
+    //   url: `https://json-server-fit-tracker.vercel.app/usuarios`,
+    //   success: function (data) {
+    //     data.forEach((value) => {
+    //       if (value.codigo_treinador == null && value.id == id) {
+    //         $("#header_treinador").html(
+    //           "Seja bem vindo, Treinador(a) " + value.nome
+    //         );
+    //       }
+    //       if (
+    //         value.codigo_treinador != null &&
+    //         parseInt(value.codigo_treinador) == id
+    //       ) {
+    //         get_aluno.push(value);
+    //       }
+    //     });
+    //     return true;
+    //   },
+    //   error: function (xhr, status, error) {
+    //     alert(
+    //       "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+    //     );
+    //     console.log(xhr, status, error);
+    //   },
+    // });
   }
 
   async function getDuvida() {
-    $.ajax({
-      method: "GET",
-      url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
-      success: function (data) {
-        data.forEach((value) => {
+    fetch(`https://json-server-fit-tracker.vercel.app/tipo_informacao`, {
+  method: "GET",
+  headers: {
+      "Content-Type": "application/json"
+  }
+}).then((res => {
+  return res.json()
+})).then((data) => {
+  data.forEach((value) => {
           if (id_informacao == value.id && value.TP_INFORMACAO == 1) {
             console.log('value: ', value);
             $("#assunto").html(value.mensagem);
           }
         });
         return true;
-      },
-      error: function (xhr, status, error) {
-        alert(
-          "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
-        );
-        console.log(xhr, status, error);
-      },
-    });
+});
+
+    // $.ajax({
+    //   method: "GET",
+    //   url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
+    //   success: function (data) {
+    //     data.forEach((value) => {
+    //       if (id_informacao == value.id && value.TP_INFORMACAO == 1) {
+    //         console.log('value: ', value);
+    //         $("#assunto").html(value.mensagem);
+    //       }
+    //     });
+    //     return true;
+    //   },
+    //   error: function (xhr, status, error) {
+    //     alert(
+    //       "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+    //     );
+    //     console.log(xhr, status, error);
+    //   },
+    // });
   }
 
 
   function setDuvida() {
-    $.ajax({
+    fetch(`https://json-server-fit-tracker.vercel.app/tipo_informacao/${id_informacao}`, {
       method: "PUT",
-      url: `https://json-server-fit-tracker.vercel.app/tipo_informacao/${id_informacao}`,
-      data: {
+      body: JSON.stringify({
         NOME_ALUNO: nome,
         ID_ALUNO: id_aluno,
         TP_INFORMACAO: 1,
@@ -163,19 +203,45 @@
         mensagem: $("#assunto").text(),
         mensagem_professor: $("#resposta").val(),
         id_treinador: id
-      },
-      success: function (data) {
-        window.location.href = `./Principal_trainner.html?id=${id}`;
+      }),
+      headers: {
+          "Content-Type": "application/json"
+      }
+  })
+  .then(function (response) {
+    window.location.href = `./Principal_trainner.html?id=${id}`;
         alert("Retorno enviado com sucesso.");
         return true;
-      },
-      error: function (xhr, status, error) {
-        alert(
-          "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
-        );
-        console.log(xhr, status, error);
-      },
-    });
+  })
+  .catch(function (error) {
+      console.log("erro")
+  });
+
+    // $.ajax({
+    //   method: "PUT",
+    //   url: `https://json-server-fit-tracker.vercel.app/tipo_informacao/${id_informacao}`,
+    //   data: {
+    //     NOME_ALUNO: nome,
+    //     ID_ALUNO: id_aluno,
+    //     TP_INFORMACAO: 1,
+    //     STATUS: "C",
+    //     assunto: $("#assunto").val(),
+    //     mensagem: $("#assunto").text(),
+    //     mensagem_professor: $("#resposta").val(),
+    //     id_treinador: id
+    //   },
+    //   success: function (data) {
+    //     window.location.href = `./Principal_trainner.html?id=${id}`;
+    //     alert("Retorno enviado com sucesso.");
+    //     return true;
+    //   },
+    //   error: function (xhr, status, error) {
+    //     alert(
+    //       "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+    //     );
+    //     console.log(xhr, status, error);
+    //   },
+    // });
 
   }
 </script>
