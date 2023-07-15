@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <title>Fit Tracker</title>
+  <!-- Link Css -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Link Css Global -->
+  <link rel="stylesheet" href="./styles/global.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="item_header">
+      <a href="./index.html"><img id="img_logo" src="./assets/logo.svg" alt="Logo" /></a>
+    </div>
+    <div class="item_header" id="boas_vindas">
+      <h2 id="bem_vindo">Seja bem vindo, usuário!</h2>
+    </div>
+    <div class="item_header" id="duvidas_conta_logout">
+      <a id="hom">Home</a>
+      <a href="./index.html"> Sair</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="row" style="margin-top: 65px; margin-left: 5%">
+      <h4>Feedback Semanal</h4>
+      <textarea name="" id="mensagem" cols="180" rows="10"
+        style="max-width: 80%; padding: 10px 10px; margin-top: 10px"></textarea>
+    </div>
+
+    <div class="button" style="justify-content: flex-end; display: flex">
+      <div class="button">
+        <button onclick="setFedback()" type="button" class="btn btn-lg rounded-pill" style="
+              padding: 10px 30px;
+              background-color: rgb(50, 217, 50);
+              color: white;
+              border: 0;
+              border-radius: 210px;
+              margin: 28px 285px 0 0;
+            " id="btn_salvar">
+          Salvar
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="information_footer">
+      <p><b>Sobre nós</b></p>
+      <a>Quem somos?</a>
+      <a>Nossos objetivos</a>
+      <a>Resultados alcançados</a>
+    </div>
+    <div class="information_footer">
+      <p><b>Contatos</b></p>
+      <a>fittracker@gmail.com</a>
+      <a>(31)99145-6032</a>
+    </div>
+    <div id="div_redes_sociais">
+      <p><b>Nossas redes sociais</b></p>
+      <a><i class="bi bi-facebook"></i></a>
+      <a><i class="bi bi-twitter"></i></a>
+      <a><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="feedback_semanal.js"></script>
+</body>
+
+</html>
+<style>
+  /* Importanto variaveis de cores do arquivo global */
+  @import url(././styles/variables.css);
+
+  header {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: center;
+    margin: 0;
+  }
+
+  header h2 {
+    margin-right: 200px;
+  }
+
+  header img {
+    width: 20vw;
+    min-width: 150px;
+  }
+
+  .item_header {
+    max-width: 33.33%;
+  }
+
+  #boas_vindas {
+    display: flex;
+    align-items: center;
+  }
+
+  #duvidas_conta_logout {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    gap: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    justify-content: space-between;
+    background: #f2f2f2;
+    margin-top: 30px;
+  }
+
+  footer a {
+    display: block;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
+
+  .information_footer {
+    display: inline-block;
+  }
+
+  #div_redes_sociais a {
+    display: inline;
+  }
+
+  #div_redes_sociais i {
+    font-size: 28px;
+  }
+
+  @media (max-width: 500px) {
+    .item_header {
+      min-width: 100%;
+    }
+
+    header {
+      padding: 10px;
+    }
+
+    header h2 {
+      margin-bottom: 8px;
+    }
+  }
+
+  #hom {
+    color: white;
+  }
+
+  main {
+    height: 350px;
+  }
+</style>

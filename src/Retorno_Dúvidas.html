@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <title>Fit Tracker</title>
+  <!-- Link Css -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Link Css Global -->
+  <link rel="stylesheet" href="./styles/global.css" />
+</head>
+
+<body>
+  <header>
+    <div class="item_header">
+      <a href="./index.html"><img id="img_logo" src="./assets/logo.svg" alt="Logo" /></a>
+    </div>
+    <div class="item_header" id="boas_vindas">
+      <h2 id="header_treinador"></h2>
+    </div>
+    <div class="item_header" id="duvidas_conta_logout">
+      <a id="home">Home</a>
+      <a href="./index.html"> Sair</a>
+    </div>
+  </header>
+  <main>
+    <h3 style="text-align: center;margin-top:65px" id="nome_aluno">
+    </h3>
+    <div class="inicio">
+      <h3>Dúvida:</h3>
+      <div class="duvida1">
+        <p id="assunto" style="padding-left: 15px; padding-top: 3px"></p>
+      </div>
+    </div>
+    <div class="duvida2">
+      <p id="mensagem" style="word-break: break-word"></p>
+      <div class="box2">
+        <textarea id="resposta" name="resposta" rows="6" style="width: 80%; height: 100px"></textarea>
+      </div>
+      <div class="button">
+        <button onclick="setDuvida()" type="button" class="btn btn-lg rounded-pill" style="
+              padding: 10px 30px;
+              background-color: rgb(50, 217, 50);
+              color: white;
+              border: 0;
+              border-radius: 210px;
+            ">
+          Salvar
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="information_footer">
+      <p><b>Sobre nós</b></p>
+      <a href="./QuemSomosPage.html">Quem somos?</a>
+    </div>
+    <div class="information_footer">
+      <p><b>Contatos</b></p>
+      <a>fittracker@gmail.com</a>
+      <a>(31)99145-6032</a>
+    </div>
+    <div id="div_redes_sociais">
+      <p><b>Nossas redes sociais</b></p>
+      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
+<script src="Retorno_Dúvidas.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src=""""></script>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get("id");
+  const nome = urlParams.get("nome");
+  const assunto = urlParams.get("assunto");
+  const id_informacao = urlParams.get("id_informacao");
+  const id_aluno = urlParams.get("id_aluno");
+
+  $(document).ready(function () {
+    $("#nome_aluno").html("Aluno: " + nome);
+    alunos_professor();
+    getDuvida();
+  });
+
+  $("#home").click(() => {
+    window.location.href = `./Principal_trainner.html?id=${id}`;
+
+  })
+  var get_aluno = [];
+  var get_aluno2 = [];
+
+  function alunos_professor() {
+    fetch(`https://json-server-fit-tracker.vercel.app/usuarios`, {
+  method: "GET",
+  headers: {
+      "Content-Type": "application/json"
+  }
+}).then((res => {
+  return res.json()
+})).then((data) => {
+  data.forEach((value) => {
+          if (value.codigo_treinador == null && value.id == id) {
+            $("#header_treinador").html(
+              "Seja bem vindo, Treinador(a) " + value.nome
+            );
+          }
+          if (
+            value.codigo_treinador != null &&
+            parseInt(value.codigo_treinador) == id
+          ) {
+            get_aluno.push(value);
+          }
+        });
+        return true;
+});
+
+    // $.ajax({
+    //   method: "GET",
+    //   url: `https://json-server-fit-tracker.vercel.app/usuarios`,
+    //   success: function (data) {
+    //     data.forEach((value) => {
+    //       if (value.codigo_treinador == null && value.id == id) {
+    //         $("#header_treinador").html(
+    //           "Seja bem vindo, Treinador(a) " + value.nome
+    //         );
+    //       }
+    //       if (
+    //         value.codigo_treinador != null &&
+    //         parseInt(value.codigo_treinador) == id
+    //       ) {
+    //         get_aluno.push(value);
+    //       }
+    //     });
+    //     return true;
+    //   },
+    //   error: function (xhr, status, error) {
+    //     alert(
+    //       "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+    //     );
+    //     console.log(xhr, status, error);
+    //   },
+    // });
+  }
+
+  async function getDuvida() {
+    fetch(`https://json-server-fit-tracker.vercel.app/tipo_informacao`, {
+  method: "GET",
+  headers: {
+      "Content-Type": "application/json"
+  }
+}).then((res => {
+  return res.json()
+})).then((data) => {
+  data.forEach((value) => {
+          if (id_informacao == value.id && value.TP_INFORMACAO == 1) {
+            console.log('value: ', value);
+            $("#assunto").html(value.mensagem);
+          }
+        });
+        return true;
+});
+
+    // $.ajax({
+    //   method: "GET",
+    //   url: `https://json-server-fit-tracker.vercel.app/tipo_informacao`,
+    //   success: function (data) {
+    //     data.forEach((value) => {
+    //       if (id_informacao == value.id && value.TP_INFORMACAO == 1) {
+    //         console.log('value: ', value);
+    //         $("#assunto").html(value.mensagem);
+    //       }
+    //     });
+    //     return true;
+    //   },
+    //   error: function (xhr, status, error) {
+    //     alert(
+    //       "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+    //     );
+    //     console.log(xhr, status, error);
+    //   },
+    // });
+  }
+
+
+  function setDuvida() {
+    fetch(`https://json-server-fit-tracker.vercel.app/tipo_informacao/${id_informacao}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        NOME_ALUNO: nome,
+        ID_ALUNO: id_aluno,
+        TP_INFORMACAO: 1,
+        STATUS: "C",
+        assunto: $("#assunto").val(),
+        mensagem: $("#assunto").text(),
+        mensagem_professor: $("#resposta").val(),
+        id_treinador: id
+      }),
+      headers: {
+          "Content-Type": "application/json"
+      }
+  })
+  .then(function (response) {
+    window.location.href = `./Principal_trainner.html?id=${id}`;
+        alert("Retorno enviado com sucesso.");
+        return true;
+  })
+  .catch(function (error) {
+      console.log("erro")
+  });
+
+    // $.ajax({
+    //   method: "PUT",
+    //   url: `https://json-server-fit-tracker.vercel.app/tipo_informacao/${id_informacao}`,
+    //   data: {
+    //     NOME_ALUNO: nome,
+    //     ID_ALUNO: id_aluno,
+    //     TP_INFORMACAO: 1,
+    //     STATUS: "C",
+    //     assunto: $("#assunto").val(),
+    //     mensagem: $("#assunto").text(),
+    //     mensagem_professor: $("#resposta").val(),
+    //     id_treinador: id
+    //   },
+    //   success: function (data) {
+    //     window.location.href = `./Principal_trainner.html?id=${id}`;
+    //     alert("Retorno enviado com sucesso.");
+    //     return true;
+    //   },
+    //   error: function (xhr, status, error) {
+    //     alert(
+    //       "Erro ao conectar com o servidor. Por favor tente novamente mais tarde."
+    //     );
+    //     console.log(xhr, status, error);
+    //   },
+    // });
+
+  }
+</script>
+<style>
+  /* Importanto variaveis de cores do arquivo global */
+  @import url(././global/variables.css);
+
+  header {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: center;
+  }
+
+  img {
+    padding-top: 8%;
+    width: 13vw;
+  }
+
+  #boas_vindas {
+    display: flex;
+    align-items: center;
+  }
+
+  #duvidas_conta_logout {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    gap: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+  }
+
+  main {
+    height: 440px;
+  }
+
+  footer a {
+    display: block;
+  }
+
+  .information_footer {
+    display: inline-block;
+  }
+
+  #div_redes_sociais a {
+    display: inline;
+  }
+
+  #div_redes_sociais i {
+    font-size: 28px;
+  }
+
+  .aluno {
+    padding-top: 50px;
+    padding-left: 40%;
+    padding-bottom: 20px;
+  }
+
+  .inicio {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 210px;
+  }
+
+  .duvida2 {
+    padding-left: 230px;
+  }
+
+  .box2 {
+    padding-top: 50px;
+    padding-left: 200;
+    padding-bottom: 60px;
+  }
+
+  .button {
+    padding-left: 80%;
+    color: green;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .duvida1 h3 {
+    margin-right: 20px;
+  }
+
+  .duvida1 .resp1 {
+    padding-left: 20px;
+  }
+
+  @media (max-width: 500px) {
+    header {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      color: white;
+      align-items: center;
+    }
+
+    img {
+      width: 40vw;
+    }
+
+    #boas_vindas {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+    }
+
+    #duvidas_conta_logout {
+      display: flex;
+      flex-direction: column;
+      padding-right: 30px;
+      gap: 10px;
+    }
+
+    footer {
+      display: inline-block;
+      padding: 20px 100px;
+      background: #f2f2f2;
+    }
+
+    main {
+      height: 500px;
+    }
+
+    footer a {
+      display: block;
+    }
+
+    .information_footer {
+      display: inline-block;
+    }
+
+    #div_redes_sociais a {
+      display: inline;
+    }
+
+    #div_redes_sociais i {
+      font-size: 28px;
+    }
+
+    .aluno {
+      padding-top: 50px;
+      padding-left: 40%;
+      padding-bottom: 20px;
+    }
+
+    .duvida1 {
+      display: flex;
+      padding-top: 110px;
+      padding-left: 70px;
+      padding-bottom: 40px;
+      font-size: 17px;
+    }
+
+    .duvida2 {
+      font-size: 13px;
+      padding-left: 20px;
+    }
+
+    .box2 {
+      padding-top: 50px;
+      padding-left: 20px;
+      padding-bottom: 60px;
+    }
+
+    .button {
+      padding-left: 35%;
+      color: green;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .duvida1 h3 {
+      margin-right: 20px;
+    }
+
+    .duvida1 .resp1 {
+      padding-left: 20px;
+    }
+  }
+</style>
